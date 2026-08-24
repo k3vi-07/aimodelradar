@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="900" height="560" fill="#16223a"/><circle cx="830" cy="50" r="150" fill="#213454" opacity=".45"/>
+<style>text{font-family:NotoSansSC, Noto Sans CJK SC, Sarasa Mono SC, sans-serif;} .k{font-size:20px;fill:#f5a623;font-weight:600} .t{font-size:38px;fill:#fff;font-weight:700} .s{font-size:18px;fill:#b8c7dc} .h{font-size:24px;fill:#16223a;font-weight:700} .b{font-size:18px;fill:#40516a} .n{font-size:30px;fill:#1a6fc4;font-weight:700} </style>
+<text x="56" y="54" class="k">THREE TIERS</text><text x="56" y="105" class="t">三梯队：从长期免费到聚合调用</text>
+<rect x="56" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="150" width="8" height="100" rx="4" fill="#4ea8e8"/>
+<text x="84" y="189" class="h">第一梯队</text>
+<text x="84" y="223" class="b">永久或长期免费层：适合常用</text>
+<rect x="464" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="150" width="8" height="100" rx="4" fill="#f5a623"/>
+<text x="492" y="189" class="h">第二梯队</text>
+<text x="492" y="223" class="b">注册赠金：适合短期集中测试</text>
+<rect x="56" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="264" width="8" height="100" rx="4" fill="#2e8b57"/>
+<text x="84" y="303" class="h">第三梯队</text>
+<text x="84" y="337" class="b">聚合平台：适合快速切换模型</text>
+<rect x="464" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="264" width="8" height="100" rx="4" fill="#a77bff"/>
+<text x="492" y="303" class="h">选择顺序</text>
+<text x="492" y="337" class="b">先看门槛，再看额度，最后看模型质量</text>
+<text x="56" y="535" class="s">8月免费模型 API 梳理｜信息截止 2026-08-19</text></svg>

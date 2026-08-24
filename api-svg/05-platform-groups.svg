@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="900" height="560" fill="#16223a"/><circle cx="830" cy="50" r="150" fill="#213454" opacity=".45"/>
+<style>text{font-family:NotoSansSC, Noto Sans CJK SC, Sarasa Mono SC, sans-serif;} .k{font-size:20px;fill:#f5a623;font-weight:600} .t{font-size:38px;fill:#fff;font-weight:700} .s{font-size:18px;fill:#b8c7dc} .h{font-size:24px;fill:#16223a;font-weight:700} .b{font-size:18px;fill:#40516a} .n{font-size:30px;fill:#1a6fc4;font-weight:700} </style>
+<text x="56" y="54" class="k">PLATFORM GROUPS</text><text x="56" y="105" class="t">29 个渠道怎么分组？</text>
+<rect x="56" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="150" width="8" height="100" rx="4" fill="#4ea8e8"/>
+<text x="84" y="189" class="h">永久免费</text>
+<text x="84" y="223" class="b">Gemini｜智谱｜Groq｜Cloudflare</text>
+<rect x="464" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="150" width="8" height="100" rx="4" fill="#f5a623"/>
+<text x="492" y="189" class="h">注册赠金</text>
+<text x="492" y="223" class="b">百炼｜豆包｜千帆｜百川｜Kimi</text>
+<rect x="56" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="264" width="8" height="100" rx="4" fill="#2e8b57"/>
+<text x="84" y="303" class="h">聚合中转</text>
+<text x="84" y="337" class="b">OpenRouter｜魔搭｜Coze｜HF</text>
+<rect x="464" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="264" width="8" height="100" rx="4" fill="#a77bff"/>
+<text x="492" y="303" class="h">特殊能力</text>
+<text x="492" y="337" class="b">语音｜视觉｜图像｜视频｜Embedding</text>
+<text x="56" y="535" class="s">8月免费模型 API 梳理｜信息截止 2026-08-19</text></svg>

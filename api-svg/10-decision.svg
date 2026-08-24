@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="900" height="560" fill="#16223a"/><circle cx="830" cy="50" r="150" fill="#213454" opacity=".45"/>
+<style>text{font-family:NotoSansSC, Noto Sans CJK SC, Sarasa Mono SC, sans-serif;} .k{font-size:20px;fill:#f5a623;font-weight:600} .t{font-size:38px;fill:#fff;font-weight:700} .s{font-size:18px;fill:#b8c7dc} .h{font-size:24px;fill:#16223a;font-weight:700} .b{font-size:18px;fill:#40516a} .n{font-size:30px;fill:#1a6fc4;font-weight:700} </style>
+<text x="56" y="54" class="k">DECISION TREE</text><text x="56" y="105" class="t">选择平台：一张决策图</text>
+<rect x="56" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="150" width="8" height="100" rx="4" fill="#4ea8e8"/>
+<text x="84" y="189" class="h">需要国内直连？</text>
+<text x="84" y="223" class="b">是：优先智谱、硅基流动、百炼</text>
+<rect x="464" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="150" width="8" height="100" rx="4" fill="#2e8b57"/>
+<text x="492" y="189" class="h">接受海外网络？</text>
+<text x="492" y="223" class="b">是：再看 Gemini、Groq、OpenRouter</text>
+<rect x="56" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="264" width="8" height="100" rx="4" fill="#f5a623"/>
+<text x="84" y="303" class="h">需要视觉或视频？</text>
+<text x="84" y="337" class="b">看商汤、智谱、Agnes 的当前额度</text>
+<rect x="464" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="264" width="8" height="100" rx="4" fill="#e34d3a"/>
+<text x="492" y="303" class="h">需要长期稳定？</text>
+<text x="492" y="337" class="b">免费层只做原型或备用，不做唯一依赖</text>
+<text x="56" y="535" class="s">8月免费模型 API 梳理｜信息截止 2026-08-19</text></svg>
