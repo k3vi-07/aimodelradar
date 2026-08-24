@@ -297,6 +297,25 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 
 - **免费模型数量**：NVIDIA 模型目录当前显示 **58 个 Free Endpoint**。粘贴的目录中可见 DeepSeek-V4-Flash、Nemotron、GLM-5.2、MiniMax-M3、Cosmos、Gemma、Step、Inkling、Laguna 等模型和服务。
 - **注意**：58 是目录口径，不等于 58 个都属于同一类文本对话模型；其中包含视觉、视频、翻译、Embedding、安全检测等端点。具体可用性、速率和是否需要申请，以[官方模型目录](https://build.nvidia.com/models)和账号控制台为准。
+
+#### NIM 58 个端点中的重点模型
+
+如果不想逐个测试全部端点，可以先看下面这 10 个 Featured 模型：
+
+| 模型 | 重点用途 |
+|---|---|
+| `deepseek-v4-flash-0731` | 综合、编程、长上下文、Agent |
+| `nemotron-3-ultra-550b-a55b` | 复杂推理、规划、Agent、1M 上下文 |
+| `nemotron-3-super-120b-a12b` | 推理、代码、工具调用、1M 上下文 |
+| `z-ai/glm-5.2` | 中文、代码、Agent |
+| `minimaxai/minimax-m3` | 多模态、代码、工具调用 |
+| `stepfun-ai/step-3.7-flash` | 企业任务、Agent、代码、多模态 |
+| `google/gemma-4-31b-it` | 通用推理、代码、开源基线 |
+| `nvidia/nemotron-3.5-lightning-30b-a3b` | 高速对话、Agent、高频调用 |
+| `thinkingmachines/inkling` | 多模态推理、工具调用 |
+| `poolside/laguna-xs-2.1` | 长程代码 Agent、终端任务 |
+
+**专项端点**：`nemotron-3-embed-1b` 适合 Embedding/RAG；`cosmos3-nano-reasoner` 适合视频理解；`nemotron-3.5-content-safety` 适合内容安全；`riva-translate-4b-instruct-v2` 适合多语言翻译。
 - ⚠️ 目录是无限滚动 SPA，**此清单为已确认部分、非全量**（DeepSeek/Llama/Qwen 家族可能还有，需浏览器手动筛选）。
 - **官网来源**：https://build.nvidia.com/models
 
