@@ -6,7 +6,7 @@
 > **免费口径**：永久免费层 / 一次性注册赠金 / 每日或每月循环额度 / 限时免费活动，四类全收；**有速率或额度限制也算免费**。
 > **一句话结论**：本月免费 API 政策变化很大。本文保留 8 月 19 日的 29 个基础快照，并补充截至 8 月 24 日发现的新渠道和政策变化，适合用来搭建低成本的测试与备用调用方案。
 
-## 8 月 24 日追更：发布后 5 天，又有这些变化
+## 8 月 24 日更新：发布后 5 天的变化
 
 原始清单是 8 月 19 日的基础快照。本节记录发布后至 8 月 24 日发现的新渠道和待核实变化；这些内容暂不直接并入“29 个当前可测试”的原始统计，避免不同日期的口径混在一起。
 
@@ -39,7 +39,7 @@ WorkBuddy、CodeBuddy 或腾讯云 TokenHub 的相关入口出现 Hy3 限时免�
 
 ---
 
-## 导语：这届白嫖党，先学会避雷再谈薅羊毛
+## 导语：免费 API 先看规则，再看额度
 
 2026 年 8 月，免费大模型 API 市场经历了今年以来最剧烈的一次洗牌：
 
@@ -52,19 +52,19 @@ WorkBuddy、CodeBuddy 或腾讯云 TokenHub 的相关入口出现 Hy3 限时免�
 
 ---
 
-## 一、本月"政策地震"：五件事，件件影响你的代码
+## 一、本月政策变化：五件事会影响接口使用
 
 ![8月政策变化时间线](/Users/admin/Documents/Codex/2026-08-24/files-mentioned-by-the-user-8/outputs/api-svg/png/02-timeline.png)
 
-### 1. GitHub Models 退役（2026-07-30）——白嫖第一圣地的陨落
+### 1. GitHub Models 退役（2026-07-30）
 
 官方公告，无回旋余地：playground、API、BYOK 全部下线。以前靠 GitHub Copilot 附赠额度跑模型的日子彻底结束。**如果你有代码还在调 `models.github.ai`，现在就得迁移。**
 
-### 2. Cerebras 免费层终结（2026-08-17）——"无限 token"神话破灭
+### 2. Cerebras 免费层终结（2026-08-17）
 
 Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2026 年 7 月起政策变更**：开放免费层终结，改为 **Free Trial = 绑卡后送 $5 一次性信用、30 天有效**；旧免费层保留到 **8 月 17 日**，此后全部账户过渡到新政策。更扎心的是，曾经免费的 **GLM-4.7 已于 8 月 17 日同步退役**。白嫖党请转 Groq。
 
-### 3. Kimi 老模型 8 月 31 日全平台下线——代码要赶紧换
+### 3. Kimi 老模型将在 8 月 31 日下线
 
 官网模型列表原文：**「`kimi-k2.5` 和 `moonshot-v1` 系列模型已停止向新注册用户开放（全平台正式下线时间为 8 月 31 日）」**。另外 `kimi-k2` 系列早已于 5 月 25 日下线、`kimi-latest` 1 月 28 日下线。**还在用这些 ID 的，请尽快切到 `kimi-k3`**。
 
@@ -144,13 +144,13 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 
 ---
 
-## 三、第一梯队：永久免费层，注册即白嫖
+## 三、第一梯队：长期免费层
 
 ![免费 API 三个梯队](/Users/admin/Documents/Codex/2026-08-24/files-mentioned-by-the-user-8/outputs/api-svg/png/08-tiers.png)
 
 这几家是"零成本、零风险、长期可用"的首选，建议全部注册。
 
-### 1. Google Gemini —— 白嫖之王，没有之一
+### 1. Google Gemini —— 免费层覆盖面较广
 
 - **免费层**：输入/输出 token 全免，**无美元上限**，**无需绑卡**。AI Studio 建个 API Key 就能用。
 - **免费模型（约 20 款）**：
@@ -161,7 +161,7 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 - **红线**：**图像（imagen-4）、视频（veo 系列）、音乐（lyria-3）在免费层均不可用**，别指望白嫖 Veo。免费层数据用于改进 Google 产品（EEA/英国/瑞士以外）。2.0-flash 系列已于 6 月 1 日停服。
 - **官网来源**：https://ai.google.dev/pricing ✅（来源页面核查：2026-08-19；本文更新：2026-08-24）
 
-### 2. 智谱 GLM —— 国内最良心，9 款 Flash 全家桶
+### 2. 智谱 GLM —— 9 款 Flash 模型免费
 
 - **免费内容**：**9 款 Flash 模型永久免费**（官方模型概览页明确标注"免费"），国内直连、OpenAI 兼容。
 - **免费模型**：
@@ -171,7 +171,7 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 - **注意**：`GLM-4.7-FlashX` 和 `GLM-4-FlashX-250414` **不免费**，别搞混。免费模型速率限制（第三方测 QPS≈2）。
 - **官网来源**：https://docs.bigmodel.cn/cn/guide/start/model-overview ✅
 
-### 3. Groq —— 速度之王，12 款免费模型
+### 3. Groq —— 速度较快，提供 12 款免费模型
 
 - **免费层**：注册即用、**免绑卡**，推理速度号称"最快"。免费模型共 **12 款**：
   - LLM：`openai/gpt-oss-120b`、`gpt-oss-20b`、`gpt-oss-safeguard-20b`、`qwen/qwen3.6-27b`（30 RPM/1K RPD/8K TPM/200K TPD）
@@ -182,34 +182,34 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 - **重要**：**Llama 对话模型和 GLM 不在免费层**（免费表里没有任何 Llama chat / GLM）。
 - **官网来源**：https://console.groq.com/docs/rate-limits ✅
 
-### 4. Cloudflare Workers AI —— 每日循环额度，白嫖永动机
+### 4. Cloudflare Workers AI —— 每日循环额度
 
 - **免费额度**：**每天 10,000 Neurons**，每日 UTC 零点重置，超出才需付费（$0.011/1000 Neurons）。
 - **免费模型**：绝大多数在免费额度内——Llama（3.1/3.2/3.3/4-scout/guard）、DeepSeek（V3.2/R1-distill）、Qwen（qwen3/qwen3-embedding/qwen2.5-coder）、GLM-4.7-flash、Gemma（3-12b/4-26b）、gpt-oss-120b/20b、Kimi-K2.5、Nemotron-3-120b、FLUX 图像、whisper 音频、moondream3.1 视觉。
 - **红线**：仅 **5 款前沿模型需付费账单**：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813`。
 - **官网来源**：https://developers.cloudflare.com/workers-ai/platform/pricing/ ✅
 
-### 5. SambaNova Cloud —— DeepSeek-V3.1 免费跑
+### 5. SambaNova Cloud —— 提供 DeepSeek-V3.1 免费层
 
 - **免费层**：生产模型 3 款（`DeepSeek-V3.1`、`Meta-Llama-3.3-70B-Instruct`、`gpt-oss-120b`）+ 预览 2 款（`DeepSeek-V3.2`、`gemma-4-31B-it`）。
 - **限制**：每模型 **20 RPM / 20 RPD / 20 万 tokens/天**；**MiniMax-M2.7 仅 Developer Tier 可用**（要绑卡），免费层没有。
 - **官网来源**：https://docs.sambanova.ai/docs/en/models/rate-limits ✅
 
-### 6. 书生 Intern AI —— 上海AI实验室的免费午餐
+### 6. 书生 Intern AI —— 提供免费的 OpenAI 兼容 API
 
 - **免费内容**：官方教程原文："**Intern 系列模型提供免费的 OpenAI 兼容格式 API**"，永久免费、无需绑卡。
 - **免费模型**：`intern-s2-preview`（35B-A3B，256K，最新）、`intern-s1-pro`（256K，内置联网搜索）、`intern-s1`（32K 科学多模态）、`intern-s1-mini`（32K）、`internvl3.5-241b-a28b`（32K 多模态）；别名 `intern-latest` 当前指向 s2-preview。
 - **注意**：**API Token 有效期 6 个月**，到期前记得续；未提供嵌入模型。base_url：`https://chat.intern-ai.org.cn/api/v1/`。
 - **官网来源**：https://internlm.intern-ai.org.cn/doc/docs/模型列表/ ✅
 
-### 7. Agnes AI —— 全模态无限期免费（新加坡 Sapiens AI）
+### 7. Agnes AI —— 提供全模态免费 API
 
 - **免费内容**：官网原文 **"Free API — Free Access to Frontier Models"**，官方 FAQ 原文 "**Our core AI models are free to use indefinitely**"——**无限期免费**，文本/图像/视频全模态，**免绑卡**，OpenAI/Anthropic 兼容（base_url：`https://apihub.agnes-ai.com/v1`）。
 - **免费模型**：`agnes-2.0-flash`（文本，Claw-Eval 第 9）、`agnes-image-2.1-flash`（文生图，最高 4K）、`agnes-video-2.0`（文生视频，音画同步）。
 - **注意**：**1M 上下文是灰度上线 50%**，不是全量；免费范围限 2.0/2.1 系列；免费用户受 RPM 限制。
 - **官网来源**：https://agnes-ai.com ✅ ｜ https://wiki.agnes-ai.com/en/docs/faqs ✅
 
-### 8. 商汤 SenseNova —— 公测期全免费（有下线预警，重点看）
+### 8. 商汤 SenseNova —— 公测期免费，需留意模型下线
 
 - **免费额度**：公测期 **¥0/月**，各模型独立计数，同账户所有 Key **共享配额**。
 - **免费模型与次数（每 5 小时）**：
@@ -223,7 +223,7 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 
 ---
 
-## 四、第二梯队：注册送钱，一次性赠金
+## 四、第二类：注册赠金和限时额度
 
 适合"短期项目 + 白嫖充值"，把各家赠金领一遍，够跑不少实验。
 
@@ -261,11 +261,11 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 
 ---
 
-## 五、第三梯队：聚合与中转，一个 Key 调全网
+## 五、第三类：聚合平台和中转接口
 
 不想一家家注册？用这些聚合平台，一个 Key 打通几十个模型。
 
-### 1. OpenRouter —— 免费模型路由器（重点推荐）
+### 1. OpenRouter —— 免费模型路由器
 
 - **免费额度**：带 `:free` 后缀的模型；**20 RPM / 每天 50 次请求**；历史累计充值 ≥ $10 后升级为 **1000 次/天**（注意是累计门槛，不是保持余额）。
 - **当前免费模型（2026-08 抓取，约 15 款）**：`nvidia/nemotron-3-ultra-550b-a55b:free`（1M 上下文）、`nemotron-3.5-lightning:free`、`nemotron-3-super-120b:free`、`nemotron-3-nano:free`、`poolside/laguna-s-2.1:free`（编码）、`cohere/north-mini-code:free`、`google/gemma-4-26b:free`、`openai/gpt-oss-20b:free`、`deepgram/flux-tts:free`、`fish-audio/s2.1-pro-free:free` 等。
@@ -398,13 +398,13 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 
 ---
 
-## 九、低成本调用方案：把免费层组一个备用链路
+## 九、低成本调用方案：给接口准备备用链路
 
 ![免费 API 平台选择决策图](/Users/admin/Documents/Codex/2026-08-24/files-mentioned-by-the-user-8/outputs/api-svg/png/10-decision.png)
 
 ![免费 API 备用链路](/Users/admin/Documents/Codex/2026-08-24/files-mentioned-by-the-user-8/outputs/api-svg/png/11-failover.png)
 
-最后给你一个实战方案（也是我自己的用法）：
+可以按下面的方式搭一条备用链路：
 
 1. **统一接口层**：上面不少渠道兼容 OpenAI API 格式，但并非全部完全兼容，尤其是视觉、音频、视频和工具调用。使用 LiteLLM 或自建路由时，应逐家验证参数和错误码。
 2. **Failover 路由**：主模型 429 / 报错 / 额度耗尽 → 自动切下一家。比如：主用 Groq 跑 gpt-oss-120b，限流了切 SambaNova，再不行切 OpenRouter :free。
