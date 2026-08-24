@@ -31,7 +31,7 @@ WorkBuddy、CodeBuddy 或腾讯云 TokenHub 的相关入口出现 Hy3 限时免�
 | 火山豆包 | 每模型 50 万 Token | 社区称部分模型可能达到 200 万 Token | 以控制台实际额度为准 |
 | 硅基流动 | 新用户 14 元 | 有来源称实名后赠送 16 元券 | 以账户到账记录为准 |
 | 商汤 | DeepSeek-V4-Flash 为 500 次/5 小时 | 有来源称部分账号为 150 次/5 小时 | 可能存在账号或活动差异 |
-| NVIDIA NIM | 17 款 Free Endpoint | 有来源称免费模型数量更多 | 需按 Free Endpoint 标记逐项确认 |
+| NVIDIA NIM | 58 款 Free Endpoint | 目录显示 58 个免费端点 | 具体可用性以模型页和账号控制台为准 |
 
 ### ✅ 暂未发现需要推翻的核心结论
 
@@ -91,7 +91,7 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 | ✅ | **Google Gemini** | 免费层约 20 款模型 | 永久免费层 | gemini-3.7/3.6/3.5-flash、2.5-pro、embedding-2、gemma-4 | 速率限制；图像/视频/音乐不免费 |
 | ✅ | **智谱 AI** | 9 款 Flash 模型永久免费 | 永久免费层 | GLM-4.7-Flash、GLM-Z1-Flash、GLM-4.6V-Flash、CogView-3-Flash、CogVideoX-Flash | QPS≈2；需实名 |
 | ✅ | **Groq** | 免费层 12 款 | 永久免费层 | gpt-oss-120b/20b、qwen3.6-27b、whisper-large-v3、orpheus TTS | 30 RPM/1K RPD/模型；Llama/GLM 不在免费层 |
-| ✅ | **NVIDIA NIM** | 17 款 Free Endpoint | 永久免费层 | nemotron-3.5-lightning、z-ai/glm-5.2、minimax-m3、diffusiongemma | 40 RPM；限原型用途 |
+| ✅ | **NVIDIA NIM** | 58 款 Free Endpoint | 永久免费层 | DeepSeek-V4-Flash、Nemotron、GLM-5.2、MiniMax-M3、Cosmos | 以模型页标记和账号限制为准 |
 | ✅ | **Cloudflare Workers AI** | 每日 10,000 Neurons | 循环额度 | Llama 3.3-70B、qwen3、gemma-4、glm-4.7-flash、kimi-k2.5 | 每日重置；5 款前沿模型需付费 |
 | ✅ | **SambaNova** | 永久免费层 5 款 | 永久免费层 | DeepSeek-V3.1、Llama-3.3-70B、gpt-oss-120b、DeepSeek-V3.2(预览) | 20 RPM/20 RPD/20万token/天 |
 | ✅ | **书生 Intern AI** | 永久免费 OpenAI 兼容 API | 永久免费层 | intern-s2-preview、s1-pro、s1、s1-mini、internvl3.5 | 密钥 6 个月需续 |
@@ -293,10 +293,10 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 - **限制**：额度极小（够你测接口，不够跑业务）；超额需先购信用。
 - **官网来源**：https://huggingface.co/docs/inference-providers/pricing
 
-### 5. NVIDIA NIM —— 17 款 Free Endpoint（附完整清单）
+### 5. NVIDIA NIM —— 58 款 Free Endpoint
 
-- **免费额度**：目录中带 **"Free Endpoint"** 标记的模型可用 API Key 免费原型调用，**40 RPM**，不按 token 计费。
-- **已确认 17 款**：`nvidia/nemotron-3.5-lightning-30b-a3b`、`nemotron-3-ultra-550b-a55b`、`nemotron-3-nano-omni-30b-a3b-reasoning`、`nemotron-3-embed-1b`、`nemotron-3.5-content-safety`、`cosmos3-nano`、`cosmos3-nano-reasoner`、`synthetic-video-detector`、`riva-translate-4b-instruct-v2`、`ising-calibration-1.5-31b`、`z-ai/glm-5.2`、`minimaxai/minimax-m3`、`stepfun-ai/step-3.7-flash`、`meta/muse-glimmer-30b`、`google/diffusiongemma-26b-a4b-it`、`thinkingmachines/inkling`、`poolside/laguna-xs-2.1`。
+- **免费模型数量**：NVIDIA 模型目录当前显示 **58 个 Free Endpoint**。粘贴的目录中可见 DeepSeek-V4-Flash、Nemotron、GLM-5.2、MiniMax-M3、Cosmos、Gemma、Step、Inkling、Laguna 等模型和服务。
+- **注意**：58 是目录口径，不等于 58 个都属于同一类文本对话模型；其中包含视觉、视频、翻译、Embedding、安全检测等端点。具体可用性、速率和是否需要申请，以[官方模型目录](https://build.nvidia.com/models)和账号控制台为准。
 - ⚠️ 目录是无限滚动 SPA，**此清单为已确认部分、非全量**（DeepSeek/Llama/Qwen 家族可能还有，需浏览器手动筛选）。
 - **官网来源**：https://build.nvidia.com/models
 
