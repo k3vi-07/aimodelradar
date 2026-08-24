@@ -1,35 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="511" viewBox="0 0 1200 511">
-  <rect width="1200" height="511" fill="#f5f5f3"/>
+  <rect width="1200" height="511" fill="#f3f1ed"/>
   <style>
     text { font-family: "NotoSansSC", "Noto Sans CJK SC", "Sarasa Mono SC", sans-serif; }
-    .mono { font-family: "DM Mono", "Sarasa Mono SC", monospace; letter-spacing: 2px; }
+    .mono { font-family: "DM Mono", "Sarasa Mono SC", monospace; letter-spacing: 1.5px; }
   </style>
-  <path d="M900 0h300v511H930c80-104 83-278-30-511Z" fill="#e6532f"/>
-  <path d="M1000 0h200v511h-82c52-147 50-321-118-511Z" fill="#1d1d1b" opacity=".96"/>
-  <path d="M760 0h18v511h-18z" fill="#e6532f" opacity=".24"/>
-  <text x="66" y="72" class="mono" font-size="18" fill="#73736e">AI MODEL RADAR / ISSUE 01</text>
-  <rect x="66" y="103" width="64" height="4" fill="#e6532f"/>
-  <text x="66" y="190" font-size="62" font-weight="800" fill="#1d1d1b">免费模型 API</text>
-  <text x="66" y="262" font-size="62" font-weight="800" fill="#e6532f">8 月月刊</text>
-  <text x="70" y="315" font-size="22" fill="#5d5d58">免费层、注册赠金、额度变化与下线提醒</text>
-  <line x1="68" y1="363" x2="700" y2="363" stroke="#deded9" stroke-width="2"/>
-  <g transform="translate(68 394)">
-    <text x="0" y="0" font-size="30" font-weight="800" fill="#1d1d1b">29</text>
-    <text x="48" y="0" font-size="16" fill="#73736e">基础快照</text>
-    <text x="176" y="0" font-size="30" font-weight="800" fill="#1d1d1b">50+</text>
-    <text x="253" y="0" font-size="16" fill="#73736e">NIM 动态端点</text>
-    <text x="475" y="0" font-size="30" font-weight="800" fill="#1d1d1b">08.24</text>
-    <text x="584" y="0" font-size="16" fill="#73736e">核查日期</text>
+  <rect x="0" y="0" width="18" height="511" fill="#e6532f"/>
+  <path d="M900 0h300v511h-190c68-102 76-294-110-511Z" fill="#1d1d1b"/>
+  <path d="M1032 0h168v511h-80c57-148 52-320-88-511Z" fill="#e6532f"/>
+  <text x="70" y="70" class="mono" font-size="16" fill="#7d7b75">AI MODEL RADAR · 2026.08</text>
+  <rect x="70" y="101" width="58" height="4" fill="#e6532f"/>
+  <text x="70" y="190" font-size="64" font-weight="800" fill="#1d1d1b">免费模型 API</text>
+  <text x="70" y="264" font-size="64" font-weight="800" fill="#e6532f">8 月更新版</text>
+  <text x="74" y="320" font-size="24" fill="#45443f">哪些还能用，哪些已经变了？</text>
+  <line x1="72" y1="368" x2="704" y2="368" stroke="#d8d5cf" stroke-width="2"/>
+  <text x="72" y="412" font-size="18" fill="#5e5c56">免费层　·　注册赠金　·　额度变化　·　下线提醒</text>
+  <text x="72" y="452" class="mono" font-size="13" fill="#8a8881">29 个基础快照　/　动态端点　/　官方来源</text>
+  <g transform="translate(840 92)">
+    <rect width="245" height="290" rx="4" fill="#f3f1ed"/>
+    <circle cx="122" cy="130" r="88" fill="none" stroke="#e6532f" stroke-width="4"/>
+    <circle cx="122" cy="130" r="60" fill="none" stroke="#1d1d1b" stroke-width="1" opacity=".42"/>
+    <path d="M122 42v176M34 130h176M60 68l124 124M184 68 60 192" stroke="#1d1d1b" stroke-width="1" opacity=".18"/>
+    <text x="122" y="124" text-anchor="middle" font-size="30" font-weight="800" fill="#1d1d1b">API</text>
+    <text x="122" y="151" text-anchor="middle" class="mono" font-size="12" fill="#e6532f">MONTHLY GUIDE</text>
+    <text x="122" y="254" text-anchor="middle" class="mono" font-size="13" fill="#1d1d1b">CHECK · COMPARE · USE</text>
   </g>
-  <g transform="translate(837 94)">
-    <rect x="0" y="0" width="258" height="258" rx="8" fill="#f5f5f3" opacity=".96"/>
-    <circle cx="129" cy="129" r="91" fill="none" stroke="#e6532f" stroke-width="3"/>
-    <circle cx="129" cy="129" r="62" fill="none" stroke="#1d1d1b" stroke-width="1" opacity=".45"/>
-    <path d="M129 38v182M38 129h182M65 65l128 128M193 65 65 193" stroke="#1d1d1b" opacity=".18"/>
-    <text x="129" y="120" text-anchor="middle" font-size="28" font-weight="800" fill="#1d1d1b">API</text>
-    <text x="129" y="151" text-anchor="middle" class="mono" font-size="12" fill="#e6532f">MONTHLY</text>
-  </g>
-  <text x="837" y="399" class="mono" font-size="14" fill="#f5f5f3">FREE · CREDITS · LIMITS</text>
-  <text x="837" y="430" font-size="17" fill="#f5f5f3">AI Model Radar</text>
-  <text x="837" y="462" class="mono" font-size="12" fill="#bdbdb8">MODEL POLICY SNAPSHOT</text>
+  <text x="922" y="438" class="mono" font-size="13" fill="#f3f1ed">信息核查截至 08.24</text>
 </svg>
