@@ -274,7 +274,7 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 
 ### 2. ModelScope 魔搭 —— 国内直连，已引入新计费机制
 
-- **重要更新**：魔搭官方限制页已引入新的计费/额度机制，原文中的“每天 2000 次、单模型 500 次/天”不再作为当前有效口径。使用前请以[官方限制说明](https://www.modelscope.cn/docs/model-service/API-Inference/limits)和控制台实际显示为准。
+- **重要更新**：魔搭官方已启用新的计费方式，原文中的“每天 2000 次、单模型 500 次/天”免费额度口径已失效，不应继续按旧规则使用。当前计费与额度以[官方限制说明](https://www.modelscope.cn/docs/model-service/API-Inference/limits)和控制台实际显示为准。
 - **免费模型**：仅带"蓝绿闪电"标识的开源模型（Qwen 全系 / DeepSeek / GLM / Kimi / MiniMax 等）。
 - **限制**：**必须绑定阿里云账号且实名**；单并发定位；429 时官方建议换模型或次日再用。
 - **官网来源**：https://www.modelscope.cn/docs/model-service/API-Inference/limits ✅
