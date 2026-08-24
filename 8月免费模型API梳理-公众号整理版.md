@@ -108,7 +108,7 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 | ✅ | **硅基流动** | 新用户 14 元赠金+¥0 免费模型 | 赠金+免费模型 | Qwen3-8B、GLM-4-9B-0414、DeepSeek-R1-0528-Qwen3-8B | 免费档限速限并发；需大陆手机号 |
 | ✅ | **Fireworks AI** | 注册送 $1 | 一次性赠金 | kimi-k3、deepseek-v4、glm-5.2、qwen3.8-max 等 15+ | 额度小 |
 | ✅ | **OpenRouter** | `:free` 免费模型 | 永久免费模型 | nemotron-3-ultra-550b:free、gemma-4:free、gpt-oss-20b:free | 20 RPM/50 次/天 |
-| ✅ | **ModelScope 魔搭** | 每日 2000 次 | 循环额度 | 带闪电标识的开源模型（Qwen/DeepSeek/GLM） | 单模型≤500 次/天；需绑阿里云 |
+| ⚠️ | **ModelScope 魔搭** | 新计费机制，旧免费额度口径失效 | 计费/额度待确认 | 带闪电标识的开源模型（Qwen/DeepSeek/GLM） | 以官方限制与控制台为准 |
 | ✅ | **扣子 Coze** | 累计 500 次免费调用 | 循环额度 | 豆包/Kimi/DeepSeek 等 50+ 模型 | RPM 300；超 500 次即停 |
 | ✅ | **Hugging Face** | 每月 $0.10 信用 | 循环额度 | Llama-3.3-70B、DeepSeek-V3.1、Qwen3-235B、GLM-5.2 等 100+ | 额度极小 |
 | ✅ | **Azure 免费账户** | $200/30 天+常免 AI 服务 | 赠金+常免 | Azure Speech 50 万字符/月、Document Intelligence 500 页/月 | 必须绑卡；Azure OpenAI 无免费层 |
@@ -272,9 +272,9 @@ Cerebras 曾是免费 API 圈的传说：注册即用、速度碾压全场。**2
 - **注意**：免费列表**动态变化**（经典 deepseek/qwen:free 本轮未见，可能下架）；余额为负时免费模型也报 402。
 - **官网来源**：https://openrouter.ai/models?max_price=0 ✅
 
-### 2. ModelScope 魔搭 —— 国内直连，每日 2000 次
+### 2. ModelScope 魔搭 —— 国内直连，已引入新计费机制
 
-- **免费额度**：每位注册用户**每天 2000 次** API-Inference；**每模型每天最多 500 次**；部分大模型（DeepSeek-R1-0528 / V3.2-Exp）**仅 100 次/天**。
+- **重要更新**：魔搭官方限制页已引入新的计费/额度机制，原文中的“每天 2000 次、单模型 500 次/天”不再作为当前有效口径。使用前请以[官方限制说明](https://www.modelscope.cn/docs/model-service/API-Inference/limits)和控制台实际显示为准。
 - **免费模型**：仅带"蓝绿闪电"标识的开源模型（Qwen 全系 / DeepSeek / GLM / Kimi / MiniMax 等）。
 - **限制**：**必须绑定阿里云账号且实名**；单并发定位；429 时官方建议换模型或次日再用。
 - **官网来源**：https://www.modelscope.cn/docs/model-service/API-Inference/limits ✅
