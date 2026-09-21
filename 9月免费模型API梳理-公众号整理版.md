@@ -133,7 +133,7 @@
 | ✅ | **书生 Intern AI** | 免费 OpenAI 兼容 API | 永久免费层 | **intern-s2（9/14 正式版开源）**、s1-pro、s1、internvl3.5 | Token 6 个月需续 | 🔄 S2-Preview 10-31 下线，换正式版 |
 | ✅ | **Agnes AI** | 全模态免费 | 永久免费层 | **agnes-3.0-flash、agnes-2.5-flash**、image-2.5-flash、video-2.5-flash(720P 限时) | 文本 20 RPM/视频 1 RPM | 🔄 免费矩阵换代到 2.5/3.0 |
 | ✅ | **商汤 SenseNova** | 60,000 积分/5h | 限时免费 | sensenova-6.8-flash-lite、u1-fast | 6.7 已停，旧 ID 报错 | 🔄 改积分制 |
-| ✅ | **美团 LongCat** 🆕 | **每日刷新约 5500 万 token** | 循环额度 | LongCat-Flash-Lite（685 亿参数 MoE）；LongCat-2.0 注册领 6000 万（待核） | OpenAI 兼容；每日重置 | 本月新收录 |
+| ✅ | **美团 LongCat** 🆕 | 新用户 1000 万 token；邀请新用户双方各 1000 万 | 一次性赠金 | LongCat-Flash-Lite（685 亿参数 MoE）、LongCat-2.0 | **无每日免费额度**；OpenAI 兼容 | 🔧 读者 9-21 登录核实，修正"每日 5500 万"社区口径 |
 | ✅ | **阿里云百炼** | 每模型 100 万 token | 一次性赠金 | qwen-max、qwen3.8 系列、qwen-vl-max-latest | 90 天；仅北京地域 | 无变化 |
 | ✅ | **火山引擎·豆包** | 每模型 50 万 token + 协作奖励 | 赠金+循环 | doubao-seed-evolving、seed-2-1 系列 12 款 | 协作奖励**个人 200 万/模型/日、企业认证 500 万/模型/日**，需授权数据训练 | 🆕 加码（✅官方福利页渲染核实） |
 | ✅ | **腾讯 TokenHub** | **每模型 100 万 token/1 年** | 一次性资源包 | Hunyuan-Hy4-Preview、Hy3（延期至 9-30？待核）+ DeepSeek-V4、GLM-5、MiniMax-M3 | 每账号每模型限领 1 次；至 12-31 | 🆕 额度升级 |
@@ -162,7 +162,7 @@
 
 | 需求 | 优先测试 | 主要原因 |
 |---|---|---|
-| 国内直连、量大 | **美团 LongCat**、智谱、硅基流动 | LongCat 每日 5500 万 token 是本月国内最大循环额度 |
+| 国内直连、量大 | **智谱**、火山豆包（协作奖励 200 万/日）、硅基流动 | 火山个人 200 万/模型/日 + 智谱免费 Flash 是可持续组合 |
 | 海外免费文本 API | **Gemini（3.8 Flash）**、Groq | 新旗舰当天进免费层 + 速度顶格 |
 | 多模型统一调用 | **OpenRouter**（`openrouter/free` 路由器） | 21 款免费款 + 一个 ID 自动切换 |
 | 长上下文（1M 级） | OpenRouter `nemotron-3-ultra:free`/`inkling-small:free`、TokenHub Hy4-Preview | 都是 1M 上下文免费渠道 |
@@ -180,7 +180,7 @@
 
 ## 三、第一梯队：长期免费层
 
-<!-- 配图：免费 API 梯队图（本月 LongCat 进第一梯队） -->
+<!-- 配图：免费 API 梯队图 -->
 
 ### 1. Google Gemini —— 新旗舰当天进免费层，独一家
 
@@ -232,13 +232,6 @@
 - 社区（9-06）称 KimiK3、DeepSeek-V4Pro 在其平台全免——单源待核，以 token-plan 页为准。
 - **官网来源**：https://www.sensenova.cn/token-plan ✅（9-21 直读）
 
-### 9. 美团 LongCat 🆕 —— 本月最重要的新渠道
-
-- **免费额度**：`LongCat-Flash-Lite`（685 亿参数 MoE/A29B 激活）**每日刷新 5000 万 token**，另有其他模型每日 500 万，合计约 5500 万 token/天——**国内目前最大的每日循环免费额度**。
-- **接口**：OpenAI 兼容，平台 longcat.chat/platform/；官方技术博客（tech.meituan.com）确认提供官方免费 API。
-- **加码**：`LongCat-2.0`（1.6T MoE）注册即领 6000 万 token（社区口径，待核）。
-- **信源说明**：官方渠道（longcat.chat 主页与美团技术博客）确认「API 开放平台」及免费 API 存在；**每日 5500 万 token 的具体数字为社区口径**——平台页需美团账号登录（9-21 复核确认登录墙），未登录无法核实，以控制台实际显示为准。每日刷新意味着适合挂持续小任务，不适合一次性超大任务。
-- **来源**：https://longcat.chat ✅｜官方技术博客 https://tech.meituan.com（社区多源交叉）
 
 ---
 
@@ -253,6 +246,7 @@
 | **阿里云百炼** | 每模型 100 万 token | 90 天；仅北京地域 | qwen-max、qwen3.8、qwen-vl-max-latest | 注册自动发放 | 无变化 |
 | **百度千帆** | 每模型 100 万 token（✅官方帮助文档直读 9-21：ERNIE-4.5-Turbo 系、ERNIE-X1-Turbo、DeepSeek-R1/V3 系等各 100 万）；ERNIE-Speed 永久免费为社区口径待核 | 3 个月 | ERNIE-4.5-Turbo、DeepSeek-R1/V3.1、Qwen3 | 百度智能云实名 | TokenPlan 转积分制 |
 | **硅基流动** | 新用户 14 元 + L0 免费档 16 款 ¥0 模型 | — | Qwen3-8B、GLM-4-9B、Xing4.0-29B-A4B（新） | 注册（大陆手机号） | 🆕 新模型 |
+| **美团 LongCat** 🆕 | 新用户 **1000 万 token**；邀请新用户**双方各 1000 万** | — | LongCat-Flash-Lite（685 亿参数 MoE/A29B）、LongCat-2.0（1.6T） | 美团账号注册；**无每日免费额度**；OpenAI 兼容 | 🔧 读者登录核实修正 |
 | **百川智能** | 新用户 80 元（≈1000 万 token）+ Assistants API 限时免费（✅官方定价页直读：2024-05-22 起新注册 80 元、3 个月） | 3 个月 | Baichuan-M3 系、M3-Plus（API 降价 70%） | 注册+实名 | 🔄 复核后回归 ✅ |
 | **Kimi 开放平台** ⚠️ | 15 元代金券（官方页已无横幅） | — | kimi-k3、k2.6、k2.7-code | 实名 | 降级待核 |
 | **讯飞星火** | 每模型 20 万 token + 新用户 1 万次交互量（✅官网口径 9-21 渲染核实）；Spark Lite「永久免费」为社区口径 | 活动期 | Spark4.0 Ultra、Spark Lite | 注册+实名 | 🔄 部分获官网佐证 |
@@ -321,13 +315,87 @@
 
 ---
 
+---
+
+## 专题：RAG 辅助免费 API（向量化 / 重排 / 语音 / 检索）
+
+> 读者点播新增。以读者 **9-10 已核验**的《免费 AI 模型 API 清单》为底稿，编辑部 **9-21 复核更新**：官方已核验条目标 ✅，第三方口径标 ⚠️。主角大模型之外，Embedding / Rerank / STT / TTS 这些"配角"调用量往往更大、成本最容易失控。
+
+### Embedding：文本向量化
+
+**国内直连**
+
+| 平台 | 免费额度 | 关键模型 | 核心限制 |
+|---|---|---|---|
+| **硅基流动** | bge-m3、bge-large-zh/en-v1.5 **完全免费**（限 RPM）✅9-10 官方价格页核验 | BAAI/bge-m3（1024 维、100+ 语言、8K） | 需实名；Pro 加速版 ¥0.07/百万 |
+| **阿里云百炼** | 每模型 100 万 token（90 天）；异步批处理另送 2000 万 ✅ | text-embedding-v4、qwen3-text-embedding | 动态降维、OpenAI 兼容 |
+| **智谱 AI** | 新用户 2000 万 token 赠金可抵扣（各模型共享） | embedding-3（256~2048 维） | 🔧 9-21 官方定价页确认：**Embedding-3/2 本体付费**（0.5/0.25 元/百万），非免费层 |
+| **腾讯 TokenHub** | Embedding 单独 100 万 token、1 年 ✅ | hunyuan-embedding | 有效期最长的选择 |
+| **百度千帆** | 各模型独立免费额度（bge-large-zh 等第三方向量模型） | bge-large-zh | 需实名 |
+| **火山豆包** | 每模型 50 万 token；协作奖励可叠加 ✅ | doubao-embedding | 按模型计 |
+
+**海外**
+
+| 平台 | 免费额度 | 关键模型 | 备注 |
+|---|---|---|---|
+| **Gemini** | 约 1500 请求/天 ⚠️（第三方口径） | gemini-embedding-001（3072 维） | 免绑卡；免费层数据可能用于训练 |
+| **Cloudflare** | 1 万 Neurons/天 ✅ | bge-large 系 | 边缘节点低延迟 |
+| **NVIDIA NIM** | 免费端点 40 RPM | nv-embedqa 系 | 注册即用 |
+| **Jina AI** | 约 100 万 token/月 ⚠️ | jina-embeddings-v3/v4 | 开源版 CC-BY-NC 禁商用 |
+| **Cohere** | 每月 1,000 次（与 Chat 共享）✅9-21 官方文档核验 | embed-v4（Trial） | 禁商用 |
+| **Mistral** | 实验计划免费层 ⚠️ | mistral-embed | 口径待官方确认 |
+
+### Rerank：检索结果精排
+
+| 平台 | 免费内容 | 关键模型 | 备注 |
+|---|---|---|---|
+| **硅基流动** | **bge-reranker-v2-m3 完全免费** ✅9-10 官方核验 | BAAI/bge-reranker-v2-m3 | Cohere 兼容 `POST /v1/rerank` |
+| **阿里云百炼** | qwen3-rerank（0.6B/4B/8B）享每模型 100 万/90 天 | qwen3-rerank | 中文榜单第一梯队、支持 instruction |
+| **NVIDIA NIM** | 免费端点 40 RPM | rerank-qa-mistral-4b | 免绑卡 |
+| **Cohere** | 每月 1,000 次 ✅ | rerank-3.5 | 质量顶级；禁商用 |
+| **Jina AI** | Starter 免费额度（与 Embedding 共享）⚠️ | jina-reranker-v2 | — |
+| **OpenRouter** | `:free` | Llama Nemotron Rerank VL 1B V2:free | 20 RPM / 50 次每日 |
+| **智谱** | ❌ **付费**（9-21 核实：价格页无免费 rerank；GLM-rerank 0.8 元/百万） | — | 赠金可抵扣 |
+
+### 语音：STT 转写 & TTS 合成
+
+**STT（转写）**
+- **Groq**：whisper-large-v3-turbo **2,000 请求/天**（另有 7,200 音频秒/时、28,800 秒/天 ≈ 8 小时）✅9-10 官方文档核验，海外最优解；
+- **硅基流动**：SenseVoiceSmall（比 Whisper 快约 15 倍）、Qwen3-ASR-1.7B、XingChenASR V3.2（含说话人分离，会议场景利器）**全部免费** ✅；单文件 50MB / 1 小时；
+- **火山豆包**：每应用 20 小时试用（半年有效）✅；**Cloudflare** whisper large-v3-turbo（1 万 Neurons/日）✅；**ElevenLabs Scribe** 4.5 小时批量 + 2.5 小时实时/月 ⚠️；**Google STT V2** 60 分钟/月永久 + $300 首充信用 ⚠️；**NIM** Parakeet-TDT 0.6B（开源 ASR 榜首）40 RPM；**Deepgram** $200 一次性信用 ⚠️。
+- ⚠️ **避坑**：OpenAI 语音转写从第一分钟起计费，零免费额度。
+
+**TTS（合成）**
+- **火山豆包**：语音合成 2 万次 / 大模型合成 2 万字符 / 声音复刻 2 万字符 / Seed-Audio 30 分钟（均半年有效）✅，中文自然度第一梯队；
+- **Azure Speech F0**：50 万字符/月滚动（需国际信用卡）；**NIM**：Magpie-TTS-Multilingual / Zeroshot（支持声音克隆）；**ElevenLabs** 1 万字符/月（免费层**禁商用**）；**Cloudflare**：aura-1（英文）。
+- **本地开源（真·免费不限量）**：Kokoro（82M、CPU 实时、Apache 2.0）、ChatTTS、FishAudio S1-mini、Piper（MIT）。
+
+### 联网检索与向量库（编辑部 9-21 新核实）
+
+| 服务 | 免费内容 | 用途 | 信源 |
+|---|---|---|---|
+| **Exa** | **注册 $20 + 每月 $10 credits，免绑卡** | RAG 联网检索 API | ✅官方定价页直读 9-21 |
+| **Qdrant Cloud** | **Free forever**：0.5 vCPU / 1GB RAM / 4GB 盘 + 免费云端推理 | 向量数据库 | ✅官方定价页直读 9-21 |
+| Tavily / Pinecone / Zilliz | 官网 JS 渲染，本轮未能完成核验 | 检索 / 向量库 | ⚠️ 待核（各自定价页） |
+
+### 零成本 RAG 组合（照抄可用）
+
+| 场景 | 组合 |
+|---|---|
+| 零成本 RAG | 硅基 bge-m3（向量）+ bge-reranker-v2-m3（重排）+ GLM-4.7-Flash（生成，本刊免费层） |
+| 带联网检索 | 上述组合 + Exa（注册 $20 + 每月 $10） |
+| 批量转写 | Groq whisper（2,000 次/天）或硅基 SenseVoice |
+| 涉敏/内网 | 全本地：bge-m3 + bge-reranker + Whisper + Kokoro（均 Apache 2.0，数据不出门） |
+
+> **四条避坑**：① Google 免费层数据用于训练、国内平台实名留痕——涉敏数据走本地；② Jina 开源版 CC-BY-NC、Cohere/ElevenLabs 免费层禁商用；③ 火山语音试用半年、百炼 90 天、TokenHub 1 年，记好到期日；④ 免费额度是厂商获客成本，生产环境准备付费或本地兜底。
+
 ## 六、选型横评：9 月的白嫖性价比榜
 
 <!-- 配图：性价比横评雷达图或星级表 -->
 
 | 平台 | 免费量级 | 折算逻辑 | 适合场景 | 白嫖评级 |
 |---|---|---|---|---|
-| **美团 LongCat** | 约 5500 万 token/天 | 每日刷新，量大管饱 | 国内持续跑量、挂机任务 | ★★★★★ 本月黑马 |
+| **美团 LongCat** | 新用户 1000 万 + 邀请各 1000 万 | 一次性 | 短期批量任务 | ★★★☆☆（读者核实：无每日额度） |
 | **Google Gemini** | 无美元上限（速率限制） | 新旗舰当天进免费层 | 日常对话/翻译/嵌入 | ★★★★★ 首选 |
 | **智谱 GLM** | 8 款 4.x Flash 免费 | 无 token 上限，QPS≈2 | 国内生产级小流量 | ★★★★★ 首选 |
 | **火山豆包** | 50 万×12 款 + 最高 500 万/日 | 数据换额度 | 中文长文本批量 | ★★★★☆（注意数据授权） |
@@ -340,7 +408,7 @@
 | **AI21** | $10/7 天 | 短期试用 | Jamba 架构尝鲜 | ★★☆☆☆（7 天倒计时） |
 | **HF** | $0.10/月 | 极小 | 连通性测试 | ★★☆☆☆ |
 
-**结论**：国内日常跑量认 **LongCat + 智谱**；海外铁三角 **Gemini + Groq + OpenRouter(:free)** 延续；长上下文免费渠道本月最富——OpenRouter 两款 1M 免费 + TokenHub Hy4-Preview（1M）；批量活依旧是 **豆包 + 千帆 + 百炼 + TokenHub** 四家赠金打包。
+**结论**：国内日常跑量认 **智谱 + 火山协作奖励（个人 200 万/模型/日）**；海外铁三角 **Gemini + Groq + OpenRouter(:free)** 延续；长上下文免费渠道本月最富——OpenRouter 两款 1M 免费 + TokenHub Hy4-Preview（1M）；批量活依旧是 **豆包 + 千帆 + 百炼 + TokenHub** 四家赠金打包。
 
 ---
 
@@ -389,9 +457,9 @@
 <!-- 配图：免费 API 备用链路图（更新：加入 LongCat 与 openrouter/free） -->
 
 1. **统一接口层**：本月绝大多数推荐渠道兼容 OpenAI 格式（LongCat、TokenHub、硅基、智谱、OpenRouter 等全家兼容），但视觉/音频/视频与工具调用参数各家有差异，接 LiteLLM 或自建路由时逐家验证错误码。
-2. **Failover 路由**：主模型 429/额度耗尽自动切下一家。本月推荐链：主用 LongCat-Flash-Lite（量大）→ 智谱 GLM-4.7-Flash（国内直连）→ Gemini 3.8 Flash（海外）→ `openrouter/free`（免费路由器兜底）。
+2. **Failover 路由**：主模型 429/额度耗尽自动切下一家。本月推荐链：主用 GLM-4.7-Flash（国内直连）→ doubao-seed（协作奖励 200 万/日）→ Gemini 3.8 Flash（海外）→ `openrouter/free`（免费路由器兜底）。
 3. **分工矩阵**（9 月版）：
-   - **日常对话/推理**：LongCat-Flash-Lite + GLM-4.7-Flash + Gemini 3.8 Flash
+   - **日常对话/推理**：GLM-4.7-Flash + Gemini 3.8 Flash + doubao-seed（协作奖励）
    - **长上下文（1M）**：OpenRouter `nemotron-3-ultra:free` / `inkling-small:free` + TokenHub Hy4-Preview
    - **嵌入/检索**：Gemini embedding-2 + 硅基 bge 系
    - **语音**：Groq whisper + orpheus TTS、Cloudflare whisper
@@ -424,8 +492,8 @@ print(resp.choices[0].message.content)
 **Q1：8 月说 29 个可测试，9 月变 24 个，免费渠道在萎缩吗？**
 渠道总量没少多少，**少的是"确定性"**：Kimi、白山、PPIO、Nebius 这几家从"官方可核实"退到"社区口径待核"（百川在 9-21 官方复核后回归），Cerebras 彻底转付费。同时 LongCat、TokenHub、AI21 是净新增。真正的趋势是：永久免费层向头部集中（Gemini/智谱/Groq/Cloudflare），其余玩家转向试用金和积分制。
 
-**Q2：LongCat 每天 5500 万 token 靠谱吗？**
-社区多源交叉 + 官方技术博客确认存在官方免费 API，但"每日刷新"的具体数字以控制台为准。建议先注册实测一天再决定是否接入生产链路。
+**Q2：LongCat 的免费额度到底是什么？**
+9-21 经读者登录核实：**没有每日免费额度**，只有新用户一次性 1000 万 token、邀请新用户双方各 1000 万。此前社区流传的"每日 5500 万"口径不成立，本刊已修正——登录墙后面的额度数字，必须以控制台为准。
 
 **Q3：智谱的免费规则到底怎么记？**
 一句话：**4.x 世代的 Flash 免费，5.x 世代全部付费**。`GLM-4.7-Flash` 免费，`GLM-5.3-Flash` 付费，别看后缀想当然。
@@ -437,10 +505,10 @@ print(resp.choices[0].message.content)
 短期内不会（收购待交割、政策未变）。但开源托管中立性是长期变量，重要权重建议本地备份一份，别把鸡蛋放在正在被收购的篮子里。
 
 **Q6：免费额度能商用吗？**
-分平台。Gemini/智谱/LongCat 等免费层一般允许商用（有限速）；OpenRouter 部分 :free 模型可能用数据训练；Cohere Trial 明确禁生产用途；火山协作奖励需授权数据。商用前读条款或发邮件要书面确认。
+分平台。Gemini/智谱等免费层一般允许商用（有限速）；OpenRouter 部分 :free 模型可能用数据训练；Cohere Trial 明确禁生产用途；火山协作奖励需授权数据。商用前读条款或发邮件要书面确认。
 
 **Q7：想跑 100 万 token 级大任务，怎么凑？**
-LongCat（5500 万/天）一家就够；不够再叠 豆包（500 万/日）+ TokenHub（每模型 100 万）+ 千帆/百炼（每模型 100 万）+ 商汤积分（5 小时窗口）。9 月凑免费算力比 8 月容易。
+火山协作奖励（个人 200 万/模型/日）+ LongCat 新用户 1000 万（一次性）+ TokenHub（每模型 100 万）+ 千帆/百炼（每模型 100 万）+ 商汤积分（5 小时窗口）。9 月凑免费算力比 8 月容易。
 
 ---
 
@@ -449,10 +517,10 @@ LongCat（5500 万/天）一家就够；不够再叠 豆包（500 万/日）+ To
 老规矩，最后三句话：
 
 1. **这份清单是 2026-09-21 的快照**。本月最大的教训是"口径会突然变"——商汤从次数制改积分制、Coze 从累计制改每日积分、智谱免费规则换代，都是不打招呼的。**对接前务必点开官网来源复核**。
-2. **优先用 ✅ 永久免费层**（Gemini/智谱/Groq/Cloudflare/LongCat），赠金当零食；⚠️ 名单里的平台先核实再注册。
+2. **优先用 ✅ 永久免费层**（Gemini/智谱/Groq/Cloudflare），赠金当零食；⚠️ 名单里的平台先核实再注册。
 3. **红名单维持 9 条**，别在 OpenAI/xAI/Cerebras 上浪费时间；DeepSeek 官方和 AI21 的动向下期继续追。
 
-**本月核查方法说明**：海外平台以官方页直读 + OpenRouter 官方 API 实时拉取为主；国内平台以官方文档/定价页直读为主，社区信源仅作交叉验证且均已标注。**9 月 21 日增补复核**：对 curl 只能取到 JS 空壳的页面（火山、讯飞、白山、LongCat、Groq、Gemini）改用无头浏览器渲染复核——火山福利页与讯飞活动额度由此获得官方口径；千帆、百川官方文档直读升级；白山确认活动已从官网撤下；LongCat 平台页为美团登录墙、Groq 文档反爬（对无头浏览器同样 Forbidden）、Gemini 域名在本核查环境网络不可达，这三家维持分层标注。免费政策变化很快，收藏时请同时记下核查日期。
+**本月核查方法说明**：海外平台以官方页直读 + OpenRouter 官方 API 实时拉取为主；国内平台以官方文档/定价页直读为主，社区信源仅作交叉验证且均已标注。**9 月 21 日增补复核**：对 curl 只能取到 JS 空壳的页面（火山、讯飞、白山、LongCat、Groq、Gemini）改用无头浏览器渲染复核——火山福利页与讯飞活动额度由此获得官方口径；千帆、百川官方文档直读升级；白山确认活动已从官网撤下；LongCat 平台页为美团登录墙——**读者当日登录核实：无每日免费额度，仅新用户 1000 万 + 邀请双方各 1000 万，本刊已据此修正**；Groq 文档反爬（对无头浏览器同样 Forbidden）、Gemini 域名在本核查环境网络不可达，这两家维持分层标注。免费政策变化很快，收藏时请同时记下核查日期。
 
 ---
 
