@@ -156,7 +156,7 @@
 | ❌ | **Cerebras / GitHub Models / 无问芯穹 / 国家超算互联网 / OpenAI / xAI / DeepInfra / Replicate / 302.AI 系 / DeepSeek 官方（赠额说法已删）** | 详见第八章红名单（共 10 条） | — | — | — | AI21 除名、DeepSeek 移存疑 |
 
 > ⚠️ 存疑条目完整清单见第七章，共 **11 个**；❌ 暂不推荐条目见第八章，共 **10 条**。"暂不推荐"只表示截至核查日不适合作为免费 API 方案，不代表平台本身不可用。
-> 与 8 月对比：✅ 29 → 26（Cerebras 死亡、白山/PPIO/Nebius 降级待核；百川、Kimi、Mistral 复核后回归；AI21/LongCat/TokenHub 入列）。免费渠道的总供给量并未下降，主要变化是**确定性收敛**——能官方核实口径的变少了。
+> 与 8 月对比：✅ 29 → 27（Cerebras 死亡、白山/PPIO/Nebius 降级待核；百川、Kimi、Mistral、魔搭 复核后回归；AI21/LongCat/TokenHub 入列）。免费渠道的总供给量并未下降，主要变化是**确定性收敛**——能官方核实口径的变少了。
 
 ### 如果你只想马上开始
 
@@ -489,8 +489,8 @@ print(resp.choices[0].message.content)
 
 ## 十、高频疑问（FAQ）
 
-**Q1：8 月说 29 个可测试，9 月变 26 个，为什么反而变多？**
-总量不降反升：百川、Kimi、Mistral 在 9-21 复核轮（官方直读 + 代理 + 读者登录页）后回归 ✅，白山、PPIO、Nebius 仍待核，Cerebras 彻底转付费。同时 LongCat、TokenHub、AI21 是净新增。真正的趋势是：永久免费层向头部集中（Gemini/智谱/Groq/Cloudflare），其余玩家转向试用金和积分制。
+**Q1：8 月说 29 个可测试，9 月变 27 个，为什么反而变多？**
+总量不降反升：百川、Kimi、Mistral、魔搭 在 9-21 复核轮（官方直读 + 代理 + 读者登录页/规则页转达）后回归 ✅，白山、PPIO、Nebius 仍待核，Cerebras 彻底转付费。同时 LongCat、TokenHub、AI21 是净新增。真正的趋势是：永久免费层向头部集中（Gemini/智谱/Groq/Cloudflare），其余玩家转向试用金和积分制。
 
 **Q2：LongCat 的免费额度到底是什么？**
 9-21 经读者登录核实：**没有每日免费额度**，只有新用户一次性 1000 万 token、邀请新用户双方各 1000 万。此前社区流传的"每日 5500 万"口径不成立，本刊已修正——登录墙后面的额度数字，必须以控制台为准。
