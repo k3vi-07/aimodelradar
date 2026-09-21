@@ -1,0 +1,78 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>API 价格横评 · AI Model Radar</title><meta name="description" content="同一模型，各家 API 收费横向对比：官方直连 vs 聚合平台 vs 免费渠道，数据 2026-09-21 核实"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="wordmark" href="index.html"><span class="logo">AMR</span><span>AI Model Radar</span></a><nav class="nav"><a href="index.html">月刊</a><a href="issues/2026-09.html">2026 年 9 月</a><a class="active" href="pricing.html">价格横评</a></nav><span class="date-chip">2026.09.21</span></header><main class="shell issue-shell">
+
+<section class="amr-hero">
+<span class="overline">常驻专题 / 同一模型 · 各家收费</span>
+<h1>API 价格横评</h1>
+<p class="amr-hero-lead">同一个模型，不同渠道价格差最大 2 倍、方向还不一致：国产旗舰经 OpenRouter 常比官方直连便宜，闭源旗舰经聚合平台反而翻倍，开源模型有整排免费渠道。价格为 9-21 实时核实——智谱 / Kimi 官方定价页直读、OpenRouter 官方 API 拉取（美元按 ≈¥7.1 折算）、Anthropic / Gemini 代理直读官方页。</p>
+<div class="amr-stats">
+<div class="amr-stat bad"><b>2×</b><span>最大价差（Claude Fable 5.1 官方 $5/$25 vs 聚合 $10/$50）</span></div>
+<div class="amr-stat ok"><b>40%</b><span>最高节省（Kimi K3 经 OpenRouter）</span></div>
+<div class="amr-stat ok"><b>5 家</b><span>免费渠道（gpt-oss-120b）</span></div>
+<div class="amr-stat warn"><b>2027.01</b><span>涨价预警（Gemini 3.8 Flash 付费价翻倍）</span></div>
+</div>
+<div class="amr-jump"><a href="#glm">GLM-5.3 系列</a><a href="#kimi">Kimi K3</a><a href="#deepseek">DeepSeek-V4.1</a><a href="#flagship">旗舰与开源</a><a href="#billing">计费方式速查</a></div>
+</section>
+
+<section id="glm" class="amr-section">
+<div class="amr-sec-head"><h2>GLM-5.3 系列</h2><span class="count-label">官方 vs 聚合平台</span></div>
+<div class="amr-cmp-wrap"><table class="amr-cmp">
+<tr><th>渠道</th><th>计费</th><th>输入</th><th>输出</th><th>备注</th></tr>
+<tr><td><b><a href="https://docs.bigmodel.cn/cn/guide/start/pricing" target="_blank" rel="noopener">智谱官方</a></b> GLM-5.3</td><td>按量</td><td class="num">¥8/百万</td><td class="num">¥28/百万</td><td class="note">缓存命中 ¥2；缓存存储限时免费 ✅定价页</td></tr>
+<tr><td><b><a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener">OpenRouter</a></b> glm-5.3</td><td>按量</td><td class="num">$0.91 ≈¥6.5</td><td class="num">$2.86 ≈¥20</td><td class="note">比官方便宜约 20–30% ✅API</td></tr>
+<tr><td><b>智谱官方</b> GLM-5.3-Flash</td><td>按量</td><td class="num">¥0.8</td><td class="num">¥2.8</td><td class="note">✅定价页</td></tr>
+<tr><td><b>OpenRouter</b> glm-5.3-flash</td><td>按量</td><td class="num">$0.09 ≈¥0.64</td><td class="num">$0.30 ≈¥2.1</td><td class="note">略低于官方 ✅API</td></tr>
+<tr><td><b><a href="https://build.nvidia.com/models" target="_blank" rel="noopener">NVIDIA NIM</a></b> glm-5-3</td><td><span class="free">免费端点</span></td><td class="free">免费</td><td class="free">免费</td><td class="note">限速约 40 RPM ✅</td></tr>
+<tr><td><b><a href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener">Cloudflare</a></b> glm-5.3 系</td><td>付费专属</td><td class="num">按 Neurons</td><td class="num">按 Neurons</td><td class="note">每日 1 万免费 Neurons 不覆盖 ✅</td></tr>
+<tr><td><b>商汤 / 千帆</b></td><td>积分制</td><td class="num">积分</td><td class="num">积分</td><td class="note">商汤 60,000 积分/5h；千帆 TokenPlan ✅</td></tr>
+</table></div>
+</section>
+
+<section id="kimi" class="amr-section">
+<div class="amr-sec-head"><h2>Kimi K3</h2><span class="count-label">官方直连反而更贵</span></div>
+<div class="amr-cmp-wrap"><table class="amr-cmp">
+<tr><th>渠道</th><th>输入</th><th>输出</th><th>备注</th></tr>
+<tr><td><b><a href="https://platform.kimi.com/pricing" target="_blank" rel="noopener">Kimi 官方</a></b> kimi-k3</td><td class="num">¥20/百万</td><td class="num">¥100/百万</td><td class="note">输入未命中缓存价 ✅定价页</td></tr>
+<tr><td><b>OpenRouter</b> kimi-k3</td><td class="num">$1.70 ≈¥12</td><td class="num">$8.50 ≈¥60</td><td class="note">比官方便宜约 40%；batch 档反而 $3/$15 ✅API</td></tr>
+<tr><td><b>Kimi 官方</b> kimi-k2.6</td><td class="num">¥6.5</td><td class="num">¥27</td><td class="note">✅定价页</td></tr>
+<tr><td><b>OpenRouter</b> kimi-k2.6</td><td class="num">$0.95 ≈¥6.8</td><td class="num">$4.00 ≈¥28.6</td><td class="note">与官方基本持平 ✅API</td></tr>
+<tr><td><b>Cloudflare</b> kimi-k2.7-code</td><td class="num">付费专属（Neurons）</td><td class="num">—</td><td class="note">✅计价表</td></tr>
+</table></div>
+</section>
+
+<section id="deepseek" class="amr-section">
+<div class="amr-sec-head"><h2>DeepSeek-V4.1-Flash</h2><span class="count-label">开源模型的渠道价差</span></div>
+<div class="amr-cmp-wrap"><table class="amr-cmp">
+<tr><th>渠道</th><th>计费</th><th>价格</th><th>备注</th></tr>
+<tr><td><b>DeepSeek 官方</b></td><td>按量</td><td class="num">文档未列明（deepseek-flash 统一命名；错峰半价）</td><td class="note">⚠️ 以控制台刊例为准</td></tr>
+<tr><td><b><a href="https://www.scnet.cn" target="_blank" rel="noopener">国家超算互联网</a></b></td><td>按量</td><td class="num"><span class="free">¥1/百万</span>（5000 万词元包 ¥8.5）</td><td class="note">✅官网+报道</td></tr>
+<tr><td><b>OpenRouter</b></td><td>按量</td><td class="num">$0.15/$0.60 ≈¥1.1/¥4.3</td><td class="note">输入价≈超算，输出价高约 4 倍 ✅API</td></tr>
+<tr><td><b>NIM / 魔搭 / 商汤</b></td><td><span class="free">免费</span></td><td class="free">免费端点 / 魔粒 / 积分</td><td class="note">✅</td></tr>
+</table></div>
+</section>
+
+<section id="flagship" class="amr-section">
+<div class="amr-sec-head"><h2>旗舰闭源与开源免费赛点</h2><span class="count-label">付费参照系</span></div>
+<div class="amr-cmp-wrap"><table class="amr-cmp">
+<tr><th>模型</th><th>官方直连价</th><th>OpenRouter</th><th>备注</th></tr>
+<tr><td><b>GPT-6 Astra</b></td><td class="num">$10/$50</td><td class="num">$10/$50（batch $5/$25）</td><td class="note">两边同价 ✅</td></tr>
+<tr><td><b>Claude Fable 5.1</b></td><td class="num">$5/$25 ✅代理直读</td><td class="num">$10/$50</td><td class="note">经聚合平台反而贵一倍——旗舰闭源务必官方直连</td></tr>
+<tr><td><b><a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener">Gemini 3.8 Flash</a></b></td><td class="num">免费层免费；付费 $0.75/$3.75</td><td class="num">$0.75/$3.75</td><td class="note">同价；2027-01-01 起官方涨价至 $1.50/$7.50 ✅</td></tr>
+<tr><td><b>Qwen3.8-Max</b></td><td class="num">百炼国内价以官网为准 ⚠️</td><td class="num">$2/$6</td><td class="note">✅API</td></tr>
+<tr><td><b>GLM-5.3</b></td><td class="num">¥8/¥28 ≈$1.12/$3.92</td><td class="num">$0.91/$2.86</td><td class="note">旗舰里的价格洼地</td></tr>
+<tr><td><b>gpt-oss-120b（开源）</b></td><td class="num">—</td><td class="num">$0.15/$0.60</td><td class="note"><span class="free">Groq / SambaNova / NIM / Cloudflare / HF 五家免费</span></td></tr>
+</table></div>
+</section>
+
+<section id="billing" class="amr-section" style="padding-bottom:20px">
+<div class="amr-sec-head"><h2>计费方式速查</h2></div>
+<div class="amr-cards">
+<div class="amr-card"><div class="amr-card-top"><span class="amr-dot dot-amber"></span><b>按量计费</b><span class="amr-way">Pay-as-you-go</span></div><div class="amr-free">按 token 计费，用多少付多少</div><div class="amr-chips"><code>OpenAI</code><code>DeepSeek</code><code>智谱</code><code>Kimi</code><code>Fireworks</code><code>OpenRouter</code></div></div>
+<div class="amr-card"><div class="amr-card-top"><span class="amr-dot dot-blue"></span><b>积分制</b><span class="amr-way">Credits</span></div><div class="amr-free">调用消耗积分，免费档定期发放</div><div class="amr-chips"><code>商汤 60,000/5h</code><code>千帆 TokenPlan</code><code>Coze 1500/日</code><code>魔搭魔粒</code></div></div>
+<div class="amr-card"><div class="amr-card-top"><span class="amr-dot dot-violet"></span><b>Neurons</b><span class="amr-way">Cloudflare 专属</span></div><div class="amr-free">按算力单元计费，每日 1 万免费额度</div><div class="amr-chips"><code>workers-ai</code></div><div class="amr-meta"><span><b>换算</b> 超出 $0.011/千 Neurons</span></div></div>
+<div class="amr-card"><div class="amr-card-top"><span class="amr-dot dot-green"></span><b>免费层限速</b><span class="amr-way">Free tier</span></div><div class="amr-free">不按量计费，限 RPM/RPD，部分模型免费</div><div class="amr-chips"><code>Gemini</code><code>Groq</code><code>SambaNova</code><code>NIM</code></div></div>
+</div>
+<div class="special-row"><b>三条结论：</b> ① 国产旗舰经 OpenRouter 常比官方直连便宜（GLM-5.3 省约 25%、Kimi K3 省约 40%），代价是海外支付；② 闭源旗舰方向相反——Claude 经聚合平台贵一倍，务必官方直连；③ 开源模型先扫免费渠道（gpt-oss-120b 五家免费、GLM-5.3 走 NIM、DeepSeek-V4.1 走超算 ¥1/M 或魔搭魔粒），付费只是兜底。</div>
+</section>
+
+<section class="footer-strip"><span>价格数据 · 2026.09.21 核实</span><span>官方定价页 / OpenRouter API / 代理直读</span><span>汇率 ≈¥7.1/$ · 实时为准</span></section>
+</main><footer class="site-footer">AI Model Radar <span>·</span> API 价格横评 · <a href="issues/2026-09.html" style="text-decoration:underline">返回 9 月刊</a></footer><script src="i18n.js"></script></body></html>
