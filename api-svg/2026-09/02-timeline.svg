@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="900" height="560" fill="#16223a"/><circle cx="830" cy="50" r="150" fill="#213454" opacity=".45"/>
+<style>text{font-family:NotoSansSC, Noto Sans CJK SC, PingFang SC, sans-serif;} .k{font-size:20px;fill:#f5a623;font-weight:600} .t{font-size:38px;fill:#fff;font-weight:700} .s{font-size:18px;fill:#b8c7dc} .h{font-size:24px;fill:#16223a;font-weight:700} .b{font-size:18px;fill:#40516a} .n{font-size:30px;fill:#1a6fc4;font-weight:700} </style>
+<text x="56" y="54" class="k">POLICY TIMELINE</text><text x="56" y="105" class="t">9 月政策变化时间线</text>
+<rect x="56" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="150" width="8" height="100" rx="4" fill="#e34d3a"/>
+<text x="84" y="189" class="h">08-31</text>
+<text x="84" y="223" class="b">Kimi 老模型：如期下线</text>
+<rect x="464" y="150" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="150" width="8" height="100" rx="4" fill="#2e8b57"/>
+<text x="492" y="189" class="h">09-02</text>
+<text x="492" y="223" class="b">Gemini 3.8 Flash 进免费层</text>
+<rect x="56" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="264" width="8" height="100" rx="4" fill="#e34d3a"/>
+<text x="84" y="303" class="h">09-04</text>
+<text x="84" y="337" class="b">智谱 5.x Flash 转付费</text>
+<rect x="464" y="264" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="464" y="264" width="8" height="100" rx="4" fill="#f5a623"/>
+<text x="492" y="303" class="h">09-10</text>
+<text x="492" y="337" class="b">商汤改积分制 · 6.7 报错</text>
+<rect x="56" y="378" width="386" height="100" rx="18" fill="#f7f9fc"/>
+<rect x="56" y="378" width="8" height="100" rx="4" fill="#2e8b57"/>
+<text x="84" y="417" class="h">09-21</text>
+<text x="84" y="451" class="b">TokenHub · LongCat 加码</text>
+<text x="56" y="535" class="s">9月免费模型 API 梳理｜信息截止 2026-09-21</text></svg>
