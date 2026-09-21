@@ -65,3 +65,20 @@
 .amr-visual{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .amr-visual img{width:100%;display:block;border:1px solid var(--border);border-radius:10px}
 @media(max-width:820px){.amr-cards,.tl,.amr-risk,.amr-visual{grid-template-columns:1fr}.amr-stats{grid-template-columns:1fr 1fr}.amr-safety{grid-template-columns:1fr 1fr}.amr-way{display:none}.amr-section{padding-top:34px}}
+
+/* ===== v2.1 clickable platform names ===== */
+.amr-card-top b a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--border);padding-bottom:1px}
+.amr-card-top b a:hover{color:var(--primary);border-color:var(--primary)}
+.amr-card-top b a::after{content:"↗";font-size:10px;color:var(--muted-foreground);margin-left:3px}
+.amr-card-top b a:hover::after{color:var(--primary)}
+
+/* ===== v2.2 pricing compare tables ===== */
+.amr-cmp{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:4px}
+.amr-cmp th{text-align:left;font:600 10px 'DM Mono';letter-spacing:.06em;color:var(--muted-foreground);border-bottom:1px solid var(--border);padding:8px 12px 8px 0}
+.amr-cmp td{border-bottom:1px solid var(--border);padding:11px 12px 11px 0;vertical-align:top;line-height:1.55}
+.amr-cmp tr:last-child td{border-bottom:0}
+.amr-cmp .num{font:600 12px 'DM Mono';white-space:nowrap}
+.amr-cmp .free{color:#26713b;font-weight:600}
+.amr-cmp .note{color:var(--muted-foreground)}
+.amr-cmp-wrap{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:6px 18px;margin-bottom:18px;overflow-x:auto}
+.amr-group+.amr-cmp-wrap{margin-top:12px}
