@@ -142,7 +142,7 @@
 | ✅ | **硅基流动** | 新用户 14 元 + L0 免费档 16 款 | 赠金+免费模型 | Qwen3-8B、GLM-4-9B-0414、DeepSeek-R1-0528-Qwen3-8B、**Xing4.0-29B-A4B（9/16 新上）** | 免费档限速限并发；需大陆手机号 | 🆕 新模型 |
 | ✅ | **讯飞星火** | 每模型 20 万 token（✅官网口径）+ 新用户 1 万次交互量 | 限时活动 | Spark4.0 Ultra 等；Spark Lite「永久免费」为社区口径待核 | 官网未标注活动截止日 | 🔄 活动额度获官网佐证 |
 | ✅ | **扣子 Coze** | **每日 1500 免费积分**（登录发放） | 循环额度 | 豆包/Kimi/DeepSeek 等 50+ 模型 | 2026-01-18 起订阅制新口径 | 🔧 上期"累计 500 次"为旧口径 |
-| ✅ | **OpenRouter** | 21 款 `:free` + 免费路由器 | 永久免费模型 | qwen3.8-27b:free、inkling:free、glm-5.2:free、nemotron-3-ultra:free(1M)、`openrouter/free` | 20 RPM/50 次/天 | 🆕 名单大换血 |
+| ✅ | **OpenRouter** | 21→24 款 `:free`（动态）+ 免费路由器 | 永久免费模型 | qwen3.8-27b:free、inkling:free、glm-5.2:free、nemotron-3-ultra:free(1M)、`openrouter/free` | 20 RPM/50 次/天 | 🆕 名单大换血 |
 | ✅ | **NVIDIA NIM** | 50+ Free Endpoint | 动态免费端点 | DeepSeek-V4-Flash、Nemotron、**glm-5-3（5.2→5.3）**、MiniMax-M3 | 数量和限制以目录为准 | 🔄 GLM 端点升级 |
 | ✅ | **Cohere** | Trial 每月 1,000 次 | 循环额度 | Command A+、A Reasoning、North Mini Code 等 | 20 req/min；禁生产用途 | 无变化 |
 | ✅ | **Hugging Face** | 每月 $0.10 信用 | 循环额度 | 100+ 经 HF 路由模型 | 额度极小；NVIDIA 收购待交割 | 无变化（母公司变了） |
@@ -274,9 +274,9 @@
 
 ## 五、第三类：聚合平台和中转接口
 
-### 1. OpenRouter —— 免费款 21 款，生态大换血
+### 1. OpenRouter —— 免费款 21→24 款，生态大换血
 
-- **当前免费模型（9-21 官方 API 实时，共 21 款）**：`qwen/qwen3.8-27b:free`（本周新增）、`z-ai/glm-5.2:free`、`cohere/north-mini-code:free`、`google/gemma-4-26b/31b:free`、`nvidia/nemotron-3-ultra-550b-a55b:free`（1M）、`nemotron-3.5-lightning:free`（1M）、`nemotron-3-super/nano-omni:free`、`nemotron-3.5-content-safety:free`、`thinkingmachines/inkling:free`、`inkling-small:free`（1M，文本+图像+音频）、`poolside/laguna-s-2.1 / laguna-xs-2.1:free`（代码）、`nex-agi/nex-n2.5-mini/pro:free`、`inclusionai/ling-3.0-flash-fin/sante/vl:free`、`liquid/lfm-2.5-2.6b:free`、`dots-studio/dots-3-note-preview:free`。
+- **当前免费模型（9-21 官方 API 两次实测 21→24 款，名单每日动态变化）**：`qwen/qwen3.8-27b:free`（本周新增）、`z-ai/glm-5.2:free`、`cohere/north-mini-code:free`、`google/gemma-4-26b/31b:free`、`nvidia/nemotron-3-ultra-550b-a55b:free`（1M）、`nemotron-3.5-lightning:free`（1M）、`nemotron-3-super/nano-omni:free`、`nemotron-3.5-content-safety:free`、`thinkingmachines/inkling:free`、`inkling-small:free`（1M，文本+图像+音频）、`poolside/laguna-s-2.1 / laguna-xs-2.1:free`（代码）、`nex-agi/nex-n2.5-mini/pro:free`、`inclusionai/ling-3.0-flash-fin/sante/vl:free`、`liquid/lfm-2.5-2.6b:free`、`dots-studio/dots-3-note-preview:free`。
 - **免费路由器**：`openrouter/free`（官方，2026-02 上线）——自动随机路由到当前可用免费款，failover 神器，上期漏收录。
 - **限额不变**：20 RPM / 50 次/天；累计充值 ≥$10 后 1000 次/天。余额为负时免费模型也报 402。
 - **官网来源**：https://openrouter.ai/api/v1/models ✅（9-21 实时）
@@ -354,7 +354,7 @@
 | **NVIDIA NIM** | 免费端点 40 RPM | rerank-qa-mistral-4b | 免绑卡 |
 | **Cohere** | 每月 1,000 次 ✅ | rerank-3.5 | 质量顶级；禁商用 |
 | **Jina AI** | Starter 免费额度（与 Embedding 共享）⚠️ | jina-reranker-v2 | — |
-| **OpenRouter** | `:free` | Llama Nemotron Rerank VL 1B V2:free | 20 RPM / 50 次每日 |
+| **OpenRouter** | ❌ **9-21 两次实测 `:free` 清单均无 rerank 模型**（Rerank VL 疑已下架） | — | 免费 rerank 需另寻，清单以 models?max_price=0 实时为准 |
 | **智谱** | ❌ **付费**（9-21 核实：价格页无免费 rerank；GLM-rerank 0.8 元/百万） | — | 赠金可抵扣 |
 
 ### 语音：STT 转写 & TTS 合成
