@@ -140,7 +140,7 @@
 | ✅ | **百川智能** | 新用户 80 元（≈1000 万 token）+ Assistants API 限时免费 | 一次性赠金 | Baichuan-M3 系、M3-Plus | 3 个月有效（✅官方定价页直读） | 🔄 复核后回归官方口径 |
 | ✅ | **百度千帆** | 每模型 100 万 token | 一次性赠金 | ERNIE-4.5-Turbo、DeepSeek-R1/V3.1 等（✅官方帮助文档直读）；**ERNIE-Speed 非永久免费**：8K/128K 各 100 万 token、1 个月有效（官方客服澄清 9-21） | 多数模型 3 个月；Speed 系 1 个月 | TokenPlan 个人版转积分制（9 月中） |
 | ✅ | **硅基流动** | 新用户 14 元 + L0 免费档 16 款 | 赠金+免费模型 | Qwen3-8B、GLM-4-9B-0414、DeepSeek-R1-0528-Qwen3-8B、**Xing4.0-29B-A4B（9/16 新上）** | 免费档限速限并发；需大陆手机号 | 🆕 新模型 |
-| ✅ | **讯飞星火** | 每模型 20 万 token（✅官网口径）+ 新用户 1 万次交互量 | 限时活动 | Spark4.0 Ultra 等；Spark Lite「永久免费」为社区口径待核 | 官网未标注活动截止日 | 🔄 活动额度获官网佐证 |
+| ✅ | **讯飞星火** | 每模型 20 万 token（✅官网口径）+ 新用户 1 万次交互量；MaaS 模型广场另托管 GLM/DeepSeek/Kimi/MiniMax | 限时活动 | Spark4.0 Ultra 等；Spark Lite「永久免费」为社区口径待核 | 官网未标注活动截止日；托管模型刊例见模型价格专题 | 🔄 活动额度获官网佐证 |
 | ✅ | **扣子 Coze** | **每日 1500 免费积分**（登录发放） | 循环额度 | 豆包/Kimi/DeepSeek 等 50+ 模型 | 2026-01-18 起订阅制新口径 | 🔧 上期"累计 500 次"为旧口径 |
 | ✅ | **OpenRouter** | 21→24 款 `:free`（动态）+ 免费路由器 | 永久免费模型 | qwen3.8-27b:free、inkling:free、glm-5.2:free、nemotron-3-ultra:free(1M)、`openrouter/free` | 20 RPM/50 次/天 | 🆕 名单大换血 |
 | ✅ | **NVIDIA NIM** | 50+ Free Endpoint | 动态免费端点 | DeepSeek-V4-Flash、Nemotron、**glm-5-3（5.2→5.3）**、MiniMax-M3 | 数量和限制以目录为准 | 🔄 GLM 端点升级 |
@@ -395,7 +395,7 @@
 
 ---
 
-## 专题二：同一模型，各家 API 价格横评
+## 专题二：模型价格——同一模型，各家 API 收费对比
 
 > 读者点播新增。价格均为 9-21 核实：智谱/Kimi 为官方定价页直读，OpenRouter 为官方 API 实时拉取（美元，按 ≈¥7.1 折算，实时汇率为准），Anthropic/Gemini 为代理直读官方定价页。**同一模型跨平台价差最大可达 2 倍，方向还不一致**。
 
@@ -410,6 +410,7 @@
 | NVIDIA NIM `glm-5-3` | **免费端点** | 免费 | 免费 | 限速约 40 RPM ✅ |
 | Cloudflare `glm-5.3` 系 | 付费专属 | 按 Neurons | 按 Neurons | 每日 1 万免费 Neurons 不覆盖 ✅ |
 | 商汤 / 千帆 | 积分制 | 消耗积分 | 消耗积分 | 商汤 60,000 积分/5h；千帆 TokenPlan ✅ |
+| 讯飞 MaaS（托管）GLM-5.3/5.2/5.1 | 按量 | ¥8 | ¥28 | **与智谱官方同价** ✅模型广场渲染 9-21 |
 
 ### Kimi K3：官方直连反而更贵
 
@@ -420,15 +421,34 @@
 | Kimi 官方 `kimi-k2.6` | ¥6.5 | ¥27 | ✅定价页 |
 | OpenRouter `kimi-k2.6` | $0.95（≈¥6.8） | $4.00（≈¥28.6） | 与官方基本持平 ✅API |
 | Cloudflare `kimi-k2.7-code` | 付费专属（Neurons） | — | ✅计价表 |
+| 硅基流动 Kimi-K2.7-Code | ¥6.5 | ¥27 | 与官方持平 ✅价格页渲染 9-21 |
+| 硅基流动 Kimi-K2.6 | ¥6.5 | ¥27 | 与官方持平 ✅同上 |
+| 讯飞 MaaS（托管）K2.7-Code / K2.6 | ¥6.5 | ¥27 | 与官方持平 ✅模型广场渲染 |
 
 ### DeepSeek-V4.1-Flash：开源模型的渠道价差
 
 | 渠道 | 计费 | 价格 | 备注 |
 |---|---|---|---|
-| DeepSeek 官方 | 按量 | 文档未列明具体数字（统一命名 `deepseek-flash`；**错峰半价**） | ⚠️ 以控制台刊例为准 |
-| 国家超算互联网 | 按量 | **¥1/百万**（5000 万词元包 ¥8.5） | ✅官网+报道 |
-| OpenRouter | 按量 | $0.15/$0.60（≈¥1.1/¥4.3） | 输入价≈超算，输出价高约 4 倍 ✅API |
+| DeepSeek 官方 `deepseek-flash`（V4.1-Flash） | 按量 | **空闲档：输入 ¥1（未命中）/ 输出 ¥4；高峰档 ×2（¥2/¥8）**；缓存命中 ¥0.02–0.04 | ✅官方定价页（9-21 读者转达）；1M 上下文 / 384K 输出 / 并发 2500 |
+| DeepSeek 官方 `deepseek-v4-pro` | 按量 | 空闲：输入 ¥4.5 / 输出 ¥13.5；高峰 ¥9/¥27 | ✅同上；并发 500；不支持图像 |
+| 硅基流动 DeepSeek-V4-Flash | 按量 | 空闲 ¥1.5/¥4.5、高峰 ¥3/¥9（缓存 ¥0.15–0.3） | ✅价格页渲染；比官方空闲档贵约 50% |
+| 硅基流动 DeepSeek-V4-Pro | 按量 | ¥12/¥24（缓存 ¥1） | ✅同上 |
+| 讯飞 MaaS（托管）V4-Flash(-0731) | 按量 | **¥1/¥2** | ✅模型广场渲染 9-21；输入=官方空闲档，**输出比官方空闲档还便宜一半——按量渠道最低输出价** |
+| 讯飞 MaaS（托管）V4-Pro-0813 | 按量 | ¥9/¥27 | ✅同上；= 官方高峰档价，不划算 |
+| 国家超算互联网 | 按量 | **¥1/百万**（5000 万词元包 ¥8.5） | ✅**= 官方空闲档的"全时段锁价"** |
+| OpenRouter | 按量 | $0.15/$0.60（≈¥1.1/¥4.3） | 与官方空闲档基本持平 ✅API |
 | NIM / 魔搭 / 商汤 | **免费** | 免费端点 / 魔粒 / 积分 | ✅ |
+
+### Qwen3.8 系列：百炼直连最便宜
+
+| 渠道 | 模型 | 输入 | 输出 | 备注 |
+|---|---|---|---|---|
+| 阿里百炼 | qwen3.8-max | ¥12/百万 | ¥36/百万 | 缓存命中 ¥1.5；Batch ¥6/¥18 ✅官方详情页 9-21 |
+| OpenRouter | qwen3.8-max-0902 | $2（≈¥14.2） | $6（≈¥42.6） | 比百炼贵约 15% ✅API |
+| 硅基流动 | Qwen3.8-27B | ¥3 | ¥12 | ✅价格页渲染 |
+| OpenRouter | qwen3.8-27b | $0.20（≈¥1.4） | $2.50（≈¥17.8） | 输入最便宜、输出偏贵 ✅API |
+| OpenRouter | qwen3.8-flash | $0.15 | $0.47 | 轻量首选 ✅API |
+| Groq | qwen3.6-27b | **免费层免费** | — | 免费兜底（30 RPM/1K 次/日）✅ |
 
 ### 旗舰闭源三连（付费参照系）与开源免费赛点
 
@@ -437,7 +457,7 @@
 | GPT-6 Astra | $10/$50 | $10/$50（batch $5/$25） | 两边同价 ✅ |
 | Claude Fable 5.1 | **$5/$25** ✅代理直读 | **$10/$50** | **经聚合平台反而贵一倍——旗舰闭源务必官方直连** |
 | Gemini 3.8 Flash | 免费层免费；付费 **$0.75/$3.75，2027-01-01 起涨至 $1.50/$7.50** ✅ | $0.75/$3.75 | 同价；**明年涨价已官宣** |
-| Qwen3.8-Max | 百炼国内价以官网为准 ⚠️ | $2/$6 | ✅API |
+| Qwen3.8-Max | 百炼 ¥12/¥36（缓存 ¥1.5）✅ | $2/$6（≈¥14.2/¥42.6） | 百炼直连更便宜 |
 | GLM-5.3 | ¥8/¥28（≈$1.12/$3.92） | $0.91/$2.86 | 旗舰里的价格洼地 |
 | gpt-oss-120b（开源） | — | $0.15/$0.60 | **但 Groq / SambaNova / NIM / Cloudflare / HF 五家免费** |
 
@@ -445,7 +465,29 @@
 
 按量计费（OpenAI、DeepSeek、智谱、Kimi、Fireworks）｜积分制（商汤 60,000 积分/5h、千帆 TokenPlan、Coze 每日 1500 积分）｜Neurons（Cloudflare 每日 1 万免费）｜订阅含额度（Mistral Free 含 $10/月）｜免费层限速（Gemini、Groq、SambaNova、NIM）。
 
-> **三条结论**：① **国产旗舰经 OpenRouter 调用常比官方直连便宜**（GLM-5.3 省约 25%、Kimi K3 省约 40%），代价是海外支付与美元计价；② **闭源旗舰方向相反**——Claude Fable 5.1 经聚合平台贵一倍，务必官方直连；③ **开源模型先扫免费渠道再谈付费**：gpt-oss-120b 五家免费、GLM-5.3 走 NIM 免费端点、DeepSeek-V4.1-Flash 走超算 ¥1/M 或魔搭魔粒，付费只是兜底。
+### 讯飞 MaaS 模型广场价目（9-21 渲染核实，读者提供入口）
+
+讯飞 MaaS 不只自家 Spark，还**托管第三方模型**（类似 TokenHub 的模型集市）：
+
+| 模型 | 输入 | 输出 | 备注 |
+|---|---|---|---|
+| Spark-X2.5（旗舰 293B-A30/256K） | ¥3.2（页面另标 ¥1.6） | ¥12（另标 ¥6） | 双价疑为活动价，以平台说明为准 |
+| Spark-X2-Flash | ¥1 | ¥2 | 自家轻量 |
+| Spark-X2.5-4B | **限时免费** | — | |
+| Spark-X2.5-1.7B | **¥0** | ¥0 | |
+| Spark 旧系（Ultra/Max/Pro/Lite 级） | ¥2–8 | ¥6–40 | 以模型广场为准 |
+| 托管 MiniMax-M2.5 | ¥2.1 | ¥8.4 | |
+| 托管 Kimi-K2.5 / K2-thinking / K2-Instruct | ¥4 | ¥16–21 | |
+| DeepSeek-OCR | **限时免费** | — | |
+| Qwen3-Embedding-8B | **¥0** | — | RAG 免费选项 |
+
+- 入口：https://maas.xfyun.cn/modelSquare ✅（读者提供，2026-09-21 渲染核实；各模型卡带更新时间）
+
+### 硅基流动价目速览（9-21 价格页渲染核实）
+
+**¥0 免费档**：Qwen3-8B、Qwen3.5-27B、bge-m3、bge-reranker-v2-m3、bge-large-zh/en-v1.5、SenseVoiceSmall、Qwen3-ASR-1.7B 等（限速限并发）；**Pro 加速档**：bge 系 ¥0.07/百万、DeepSeek-V4-Flash ¥1.5/¥4.5（空闲 2–8 点）～¥3/¥9（高峰）、DeepSeek-V4-Pro ¥12/¥24、Kimi-K2.7-Code ¥6.5/¥27、Qwen3.8-27B ¥3/¥12、Qwen3.6-27B ¥3/¥18。
+
+> **三条结论**：① **国产旗舰经 OpenRouter 调用常比官方直连便宜**（GLM-5.3 省约 25%、Kimi K3 省约 40%），代价是海外支付与美元计价；② **闭源旗舰与 Qwen 旗舰走官方直连更便宜**——Claude Fable 5.1 经聚合平台贵一倍、Qwen3.8-Max 百炼（¥12/¥36）比 OR 便宜约 15%；③ **开源模型先扫免费渠道再谈付费**：gpt-oss-120b 五家免费、GLM-5.3 走 NIM 免费端点、DeepSeek-V4.1-Flash 最低价是**讯飞 MaaS 托管 ¥1/¥2（输出比官方空闲档再省一半）**，官方空闲档（¥1/¥4）与超算、OpenRouter 持平——错峰直连官方即可，魔搭魔粒免费兜底。
 
 ## 六、选型横评：9 月的白嫖性价比榜
 
@@ -492,7 +534,7 @@
 
 | 平台 | 结论 | 依据 |
 |---|---|---|
-| **DeepSeek 官方** | 无免费层，纯按量付费（V4.1-Flash 开放权重可自部署；超算互联网 ¥1/M 为低价替代）；9 月社区"新用户赠额"说法未获官方证实，已删除 | 官方定价页（8 月核实 + 9-21 复核无赠额条目） |
+| **DeepSeek 官方** | 无免费层，纯按量付费：flash 空闲档输入 ¥1/输出 ¥4、高峰翻倍，缓存命中 ¥0.02（9-21 官方刊例）；V4.1-Flash 开放权重可自部署，超算 ¥1/M 相当于全时段锁价空闲档；社区"新用户赠额"说法未证实已删 | 官方定价页 ✅（刊例 9-21 读者转达） |
 | **Cerebras** | 免费层已终结：绑卡 $5/30 天一次性信用；社区吐槽无缓存折扣、同会话比 OpenRouter 贵数倍 | 官方定价页+文档（9 月执行中） |
 | **GitHub Models** | 7-30 全面退役，无回旋；官方推荐迁 Azure AI Foundry，社区主流是 OpenRouter/Ollama | 官方 changelog |
 | **无问芯穹 Infini-AI** | 官网明示个人服务停止；3-30 起基础版 LLM API 免费服务也已停止 | 官网+官方文档 |
@@ -628,7 +670,7 @@ https://ai.baidu.com/ai-doc/WENXINWORKSHOP/3mh3fw81w ✅（新用户免费额度
 https://platform.baichuan-ai.com/prices ✅（9-21 直读：新注册 80 元、3 个月；Assistants API 限时免费）
 
 **讯飞星火**
-https://www.xfyun.cn/prices（"每模型 20 万 tokens、新用户 1 万次"官网促销口径，9-21 渲染核实）｜https://www.xfyun.cn/doc/spark/TokenPlan.html
+https://www.xfyun.cn/prices（"每模型 20 万 tokens、新用户 1 万次"官网促销口径，9-21 渲染核实）｜https://maas.xfyun.cn/modelSquare ✅（MaaS 模型广场刊例，读者提供入口）｜https://www.xfyun.cn/doc/spark/TokenPlan.html
 
 **Kimi**
 https://platform.kimi.com/pricing ✅（9-21 直读）｜https://platform.kimi.com/docs/models ✅（下线确认）
@@ -664,7 +706,7 @@ https://azure.microsoft.com/en-us/free/ ✅（9-21 直读）
 https://www.cerebras.ai/pricing ✅｜https://inference-docs.cerebras.ai ✅
 
 **DeepSeek**
-https://api-docs.deepseek.com ✅｜https://www.deepseek.com（V4.1-Flash 发布公告）
+https://api-docs.deepseek.com ✅｜https://api-docs.deepseek.com/quick_start/pricing ✅（官方刊例，9-21 读者转达）｜https://www.deepseek.com（V4.1-Flash 发布公告）
 
 **ModelScope**
 https://www.modelscope.cn/docs/model-service/API-Inference/limits
