@@ -1,4 +1,4 @@
-# 9 月免费大模型 API 梳理：25 个基础快照可测试，14 个需核实，9 个暂不推荐（新增：本月 AI 大事件月历）
+# 9 月免费大模型 API 梳理：26 个基础快照可测试，13 个需核实，9 个暂不推荐（新增：本月 AI 大事件月历）
 
 <!-- 配图：9月刊封面（同 8 月版封面风格，主数字 23/16/9 + "AI 大事件"角标） -->
 
@@ -119,7 +119,7 @@
 
 ---
 
-## 二、基础快照总览（2026-09-21）：✅ 25 个可测试 / ⚠️ 14 个需核实 / ❌ 9 个暂不推荐
+## 二、基础快照总览（2026-09-21）：✅ 26 个可测试 / ⚠️ 13 个需核实 / ❌ 9 个暂不推荐
 
 <!-- 配图：23/16/9 总览 + 与 8 月对比（29→23 的去留流向图） -->
 
@@ -148,13 +148,14 @@
 | ✅ | **Hugging Face** | 每月 $0.10 信用 | 循环额度 | 100+ 经 HF 路由模型 | 额度极小；NVIDIA 收购待交割 | 无变化（母公司变了） |
 | ✅ | **Fireworks AI** | 注册送 $1 | 一次性赠金 | kimi-k3、deepseek-v4、glm-5.2、qwen3.8-max | 额度小 | 无变化 |
 | ✅ | **AI21** 🆕 | **$10 信用/7 天，免卡** | 限时试用 | Jamba Mini/Large | 7 天有效 | 红名单除名 |
+| ✅ | **Mistral** | Free plan 含 **$10/月 API 信用** | 订阅附带 | mistral-large-3、codestral、voxtral、mistral-embed | 非无限；Pro $14.99/月 | 🔄 代理复核后回归 |
 | ✅ | **Azure 免费账户** | $200/30 天+常免 AI 服务 | 赠金+常免 | Speech 50 万字符/月、Document Intelligence 500 页/月 | 必须绑卡；Azure OpenAI 无免费层 | 无变化 |
 | ✅ | **Kimi 开放平台** | 认证领 15 元体验金 | 一次性赠金 | kimi-k3、k2.6、k2.7-code | 实名认证后发放；K3 是否参与以控制台为准 | 🔄 读者核实登录页后回归 |
-| ⚠️ | **白山智算 / PPIO / Nebius / Mistral / Anthropic / ModelScope / MiniMax / DeepSeek 官方 / 阶跃 / 面壁 / 天工 / 零一 / Novita / Together** | 详见第七章存疑清单（共 14 个） | — | — | — | — |
+| ⚠️ | **白山智算 / PPIO / Nebius / Anthropic / ModelScope / MiniMax / DeepSeek 官方 / 阶跃 / 面壁 / 天工 / 零一 / Novita / Together** | 详见第七章存疑清单（共 13 个） | — | — | — | — |
 | ❌ | **Cerebras / GitHub Models / 无问芯穹 / 国家超算互联网 / OpenAI / xAI / DeepInfra / Replicate / 302.AI 系** | 详见第八章红名单（共 9 条） | — | — | — | AI21 除名、DeepSeek 移存疑 |
 
-> ⚠️ 存疑条目完整清单见第七章，共 **14 个**；❌ 暂不推荐条目见第八章，共 **9 条**。"暂不推荐"只表示截至核查日不适合作为免费 API 方案，不代表平台本身不可用。
-> 与 8 月对比：✅ 29 → 25（Cerebras 死亡、白山/PPIO/Nebius 降级待核；百川、Kimi 复核后回归；AI21/LongCat/TokenHub 入列）。免费渠道的总供给量并未下降，主要变化是**确定性收敛**——能官方核实口径的变少了。
+> ⚠️ 存疑条目完整清单见第七章，共 **13 个**；❌ 暂不推荐条目见第八章，共 **9 条**。"暂不推荐"只表示截至核查日不适合作为免费 API 方案，不代表平台本身不可用。
+> 与 8 月对比：✅ 29 → 26（Cerebras 死亡、白山/PPIO/Nebius 降级待核；百川、Kimi、Mistral 复核后回归；AI21/LongCat/TokenHub 入列）。免费渠道的总供给量并未下降，主要变化是**确定性收敛**——能官方核实口径的变少了。
 
 ### 如果你只想马上开始
 
@@ -187,7 +188,7 @@
 - **免费层**：输入/输出 token 全免、无美元上限、免绑卡。**9/2 发布的 `gemini-3.8-flash` 与 `3.8-flash-cyber` 发布当天即可在 AI Studio / API 免费层调用**（社区口径限速约 10 RPM / 250K TPM / 1500 RPD）。
 - **免费模型**：3.8-flash（新）、3.7/3.6/3.5-flash、2.5-pro/flash、embedding 系、gemma-4、live/tts 预览系。9/15 又发布 3.8 Live（音频到音频，免费口径未确认）。
 - **红线**：imagen-4、veo、lyria 仍不在免费层。免费层数据用于改进 Google 产品（EEA/英国/瑞士以外）。
-- **注意**：官方 rate-limits 页本次核查从本环境不可达，模型级限额为第三方多源一致口径；`gemini-omni-flash-preview` 端点将于 9-30 弃用（官方 release notes 口径，未能复核原文）。
+- **信源说明（9-21 代理复核）**：官方 rate-limits 页已可读取，其中**免费层静态限额表已下线，官方指引"在 AI Studio 中查看有效的速率限制"（按项目动态显示）**——第三方口径"约 10 RPM / 1500 RPD"为旧静态表参考值；`gemini-omni-flash-preview` 端点将于 9-30 弃用（官方 release notes 口径）。
 - **官网来源**：https://ai.google.dev/pricing ✅（以发布前官方页为准）
 
 ### 2. 智谱 GLM —— 4.x Flash 依旧免费，但换代规则变了
@@ -263,8 +264,8 @@
 |---|---|---|---|---|---|
 | **AI21** 🆕 | **$10 信用 / 7 天** | 免卡；7 天有效 | Jamba Mini（$0.20/$0.40）、Jamba Large（$2/$8 每百万） | 注册即得 | 红名单除名 |
 | **Fireworks AI** | 注册送 $1 | 额度小 | kimi-k3、deepseek-v4、glm-5.2、qwen3.8-max | 注册即得 | 无变化（官方页 9-21 直读） |
-| **Mistral** ⚠️ | 免费套餐存在；"$10/月 API 信用"与"限速免费（约 1 RPS）"两种口径冲突 | 非无限 | mistral-large-3、codestral、voxtral | 注册即得 | 口径仍未官方确认 |
-| **Anthropic** ⚠️ | 新用户赠金约 $5：多数第三方称有、亦有汇总称无，官方页不可达未能裁决 | 需手机验证 | Claude Fable 5.1 / Mythos 5.1（新旗舰） | console 注册 | 口径冲突维持 |
+| **Mistral** | **Free plan 含 $10/月 API 信用**（✅官方定价页 9-21 代理直读原文"$10 /mo in API credits"） | 非无限；Pro $14.99/月 | mistral-large-3、codestral、voxtral、mistral-embed | 注册即得 | 🔄 回归 ✅ |
+| **Anthropic** | **官方 FAQ 确认"新用户可获得小额免费赠金"**（9-21 代理直读）；金额未标（约 $5 为第三方口径） | 需手机验证 | Claude Fable 5.1 / Mythos 5.1（新旗舰） | console 注册 | 官方确认存在 ⚠️ 金额 |
 | **Azure 免费账户** | $200/30 天 + 12 个月热门服务免费 | 必须绑卡 | Azure Speech、Document Intelligence（常免） | 注册+绑卡 | 无变化（官方页 9-21 直读） |
 | **Nebius Token Factory** ⚠️ | 上期"$1 新账号信用"本期官方文档未找到标注 | — | 60+ 开源模型 | 注册 | 降级待核 |
 
@@ -341,9 +342,9 @@
 | **Gemini** | 约 1500 请求/天 ⚠️（第三方口径） | gemini-embedding-001（3072 维） | 免绑卡；免费层数据可能用于训练 |
 | **Cloudflare** | 1 万 Neurons/天 ✅ | bge-large 系 | 边缘节点低延迟 |
 | **NVIDIA NIM** | 免费端点 40 RPM | nv-embedqa 系 | 注册即用 |
-| **Jina AI** | 约 100 万 token/月 ⚠️ | jina-embeddings-v3/v4 | 开源版 CC-BY-NC 禁商用 |
+| **Jina AI** | **免费 100 RPM / 100K TPM**（✅官方页 9-21 代理直读） | jina-embeddings-v4 | v4 基于 Qwen Research License，仅研究/非商用 |
 | **Cohere** | 每月 1,000 次（与 Chat 共享）✅9-21 官方文档核验 | embed-v4（Trial） | 禁商用 |
-| **Mistral** | 实验计划免费层 ⚠️ | mistral-embed | 口径待官方确认 |
+| **Mistral** | Free plan 含 $10/月 API 信用（✅官方定价页 9-21） | mistral-embed | 非无限 |
 
 ### Rerank：检索结果精排
 
@@ -353,7 +354,7 @@
 | **阿里云百炼** | qwen3-rerank（0.6B/4B/8B）享每模型 100 万/90 天 | qwen3-rerank | 中文榜单第一梯队、支持 instruction |
 | **NVIDIA NIM** | 免费端点 40 RPM | rerank-qa-mistral-4b | 免绑卡 |
 | **Cohere** | 每月 1,000 次 ✅ | rerank-3.5 | 质量顶级；禁商用 |
-| **Jina AI** | Starter 免费额度（与 Embedding 共享）⚠️ | jina-reranker-v2 | — |
+| **Jina AI** | 免费档与 Embedding 共享限速（官方口径 100 RPM/100K TPM）✅ | jina-reranker-v2 | 非商用 |
 | **OpenRouter** | ❌ **9-21 两次实测 `:free` 清单均无 rerank 模型**（Rerank VL 疑已下架） | — | 免费 rerank 需另寻，清单以 models?max_price=0 实时为准 |
 | **智谱** | ❌ **付费**（9-21 核实：价格页无免费 rerank；GLM-rerank 0.8 元/百万） | — | 赠金可抵扣 |
 
@@ -412,7 +413,7 @@
 
 ---
 
-## 七、存疑清单：14 个「注册前先核实」的平台
+## 七、存疑清单：13 个「注册前先核实」的平台
 
 | 平台 | 已核实事实 | 待确认 | 依据来源 |
 |---|---|---|---|
@@ -421,8 +422,7 @@
 | **PPIO 派欧云** | 官方定价页（9-21 直读）**已无任何免费/赠金说明**；模型阵容很新 | 5 元注册赠金是否还在 | ppio.com/pricing |
 | **ModelScope 魔搭** | 免费每日 2000 次为社区口径，官方 limits 页无法直读 | 计费口径（上期"新计费"未证实） | modelscope.cn |
 | **Nebius** | 官方文档无新账号赠金标注 | 上期"$1 信用"是否注册流程内展示 | docs.tokenfactory.nebius.com |
-| **Mistral** | 免费套餐存在（官方）；$10/月信用 vs 限速免费两种口径 | 免费额度形态 | mistral.ai/pricing |
-| **Anthropic** | 新用户赠金约 $5：多源称有、亦有汇总称无 | 赠金存续与金额 | console.anthropic.com（本环境不可达） |
+| **Anthropic** | 官方 FAQ 确认存在小额赠金（9-21 代理直读定价页原文） | 具体金额（约 $5 为第三方口径），以 console 到账为准 | docs.anthropic.com/en/docs/about-claude/pricing ✅ |
 | **MiniMax** | 实名 15 元券（第三方 8-11）；20 亿 token 活动 9-6 截止 | 官方免费政策页未找到 | platform.minimaxi.com |
 | **阶跃星辰** | Step Plan 3-23 起转常规包月订阅（Flash Mini/Plus/Pro/Max） | 后续是否再开免费活动 | platform.stepfun.com |
 | **面壁智能** | lantay.modelbest.cn 实测已变为"文档处理智能工作台" | MiniCPM-V 4.6 免费 API 是否还在线 | lantay.modelbest.cn |
@@ -488,8 +488,8 @@ print(resp.choices[0].message.content)
 
 ## 十、高频疑问（FAQ）
 
-**Q1：8 月说 29 个可测试，9 月变 24 个，免费渠道在萎缩吗？**
-渠道总量没少多少，**少的是"确定性"**：白山、PPIO、Nebius 这几家从"官方可核实"退到"社区口径待核"（百川、Kimi 均在 9-21 复核后回归），Cerebras 彻底转付费。同时 LongCat、TokenHub、AI21 是净新增。真正的趋势是：永久免费层向头部集中（Gemini/智谱/Groq/Cloudflare），其余玩家转向试用金和积分制。
+**Q1：8 月说 29 个可测试，9 月变 26 个，为什么反而变多？**
+总量不降反升：百川、Kimi、Mistral 在 9-21 复核轮（官方直读 + 代理 + 读者登录页）后回归 ✅，白山、PPIO、Nebius 仍待核，Cerebras 彻底转付费。同时 LongCat、TokenHub、AI21 是净新增。真正的趋势是：永久免费层向头部集中（Gemini/智谱/Groq/Cloudflare），其余玩家转向试用金和积分制。
 
 **Q2：LongCat 的免费额度到底是什么？**
 9-21 经读者登录核实：**没有每日免费额度**，只有新用户一次性 1000 万 token、邀请新用户双方各 1000 万。此前社区流传的"每日 5500 万"口径不成立，本刊已修正——登录墙后面的额度数字，必须以控制台为准。
@@ -519,7 +519,7 @@ print(resp.choices[0].message.content)
 2. **优先用 ✅ 永久免费层**（Gemini/智谱/Groq/Cloudflare），赠金当零食；⚠️ 名单里的平台先核实再注册。
 3. **红名单维持 9 条**，别在 OpenAI/xAI/Cerebras 上浪费时间；DeepSeek 官方和 AI21 的动向下期继续追。
 
-**本月核查方法说明**：海外平台以官方页直读 + OpenRouter 官方 API 实时拉取为主；国内平台以官方文档/定价页直读为主，社区信源仅作交叉验证且均已标注。**9 月 21 日增补复核**：对 curl 只能取到 JS 空壳的页面（火山、讯飞、白山、LongCat、Groq、Gemini）改用无头浏览器渲染复核——火山福利页与讯飞活动额度由此获得官方口径；千帆、百川官方文档直读升级；白山确认活动已从官网撤下；LongCat 平台页为美团登录墙——**读者当日登录核实：无每日免费额度，仅新用户 1000 万 + 邀请双方各 1000 万，本刊已据此修正**；Groq 文档反爬（对无头浏览器同样 Forbidden）、Gemini 域名在本核查环境网络不可达，这两家维持分层标注。免费政策变化很快，收藏时请同时记下核查日期。
+**本月核查方法说明**：海外平台以官方页直读 + OpenRouter 官方 API 实时拉取为主；国内平台以官方文档/定价页直读为主，社区信源仅作交叉验证且均已标注。**9 月 21 日代理复核轮**：经本地代理访问 Mistral/Anthropic/Jina/Gemini 官方页——Mistral $10/月 API 信用、Jina 100 RPM/100K TPM、Anthropic 赠金存在均获官方原文确认，Gemini 免费限额表确认已转 AI Studio 动态显示。另：对 curl 只能取到 JS 空壳的页面（火山、讯飞、白山、LongCat、Groq、Gemini）改用无头浏览器渲染复核——火山福利页与讯飞活动额度由此获得官方口径；千帆、百川官方文档直读升级；白山确认活动已从官网撤下；LongCat 平台页为美团登录墙——**读者当日登录核实：无每日免费额度，仅新用户 1000 万 + 邀请双方各 1000 万，本刊已据此修正**；Groq 文档反爬（对无头浏览器同样 Forbidden）、Gemini 域名在本核查环境网络不可达，这两家维持分层标注。免费政策变化很快，收藏时请同时记下核查日期。
 
 ---
 
